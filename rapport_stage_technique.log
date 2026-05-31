@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.5.31)  31 MAY 2026 13:34
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.5.31)  31 MAY 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -28,124 +28,6 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-6.
-
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
-TeX and XeLaTeX
-\babel@savecnt=\count280
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2068.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2070.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2072.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2073.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2074.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2076.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2101.
-\U@D=\dimen149
-\l@unhyphenated=\language79
-
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def
-)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count281
-Package babel Info: Configuration files are deprecated, as
-(babel)             they can break document portability.
-(babel)             Reported on input line 4196.
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\b
-abel-french.tex)
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\b
-abel-english.tex)
-Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 4320.
-
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\fren
-ch.ldf
-Language: french 2025-08-15 v4.0e French support from the babel system
-
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\fren
-ch3.ldf
-Language: french 2025-08-15 v3.7e French support from the babel system
-\FB@stdchar=\count282
-Package french3.ldf Info: No need for active punctuation characters
-(french3.ldf)             with this version of XeTeX!
-(french3.ldf)             reported on input line 154.
-\FB@punctthick=\XeTeXcharclass4
-\FB@punctthin=\XeTeXcharclass5
-\FB@punctnul=\XeTeXcharclass6
-\FB@guilo=\XeTeXcharclass7
-\FB@guilf=\XeTeXcharclass8
-\FB@guilnul=\XeTeXcharclass9
-\FBguill@level=\count283
-\FBold@everypar=\toks19
-\FB@Mht=\dimen150
-\mc@charclass=\count284
-\mc@charfam=\count285
-\mc@charslot=\count286
-\std@mcc=\count287
-\dec@mcc=\count288
-\FB@pardim=\dimen151
-\listindentFB=\dimen152
-\descindentFB=\dimen153
-\labelindentFB=\dimen154
-\labelwidthFB=\dimen155
-\leftmarginFB=\dimen156
-\parindentFFN=\dimen157
-\FBfnindent=\dimen158
-))
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4320.
-
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\engli
-sh.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-))
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.s
-ty)
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\polyglo
-ssia.sty
-Package: polyglossia 2026/04/18 v2.10 Modern multilingual typesetting with XeLa
-TeX and LuaLaTeX
-
-(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
-ty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count289
-)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.s
 ty
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\x
@@ -156,9 +38,9 @@ Package: expl3 2025-12-24 L3 programming layer (loader)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
 -xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
-\g__graphics_track_int=\count290
-\g__pdfannot_backend_int=\count291
-\g__pdfannot_backend_link_int=\count292
+\g__graphics_track_int=\count280
+\g__pdfannot_backend_int=\count281
+\g__pdfannot_backend_link_int=\count282
 ))
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
@@ -168,34 +50,40 @@ Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 etex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count293
-\l__fontspec_language_int=\count294
-\l__fontspec_strnum_int=\count295
-\l__fontspec_tmp_int=\count296
-\l__fontspec_tmpa_int=\count297
-\l__fontspec_tmpb_int=\count298
-\l__fontspec_tmpc_int=\count299
-\l__fontspec_em_int=\count300
-\l__fontspec_emdef_int=\count301
-\l__fontspec_strong_int=\count302
-\l__fontspec_strongdef_int=\count303
-\l__fontspec_tmpa_dim=\dimen159
-\l__fontspec_tmpb_dim=\dimen160
-\l__fontspec_tmpc_dim=\dimen161
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.c
 fg)))
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\polyglo
+ssia.sty
+Package: polyglossia 2026/04/18 v2.10 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
+ty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-
-Package polyglossia Warning: You have loaded both babel and polyglossia.
-(polyglossia)                The two packages are mutually exclusive!
-
-\l_xpg_alias_keyvals_int=\count304
+\l_xpg_alias_keyvals_int=\count295
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-l
 atex.ldf
@@ -204,13 +92,13 @@ File: gloss-latex.ldf polyglossia: module for default language
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-f
 rench.ldf
 File: gloss-french.ldf polyglossia: module for French
-\french@openbrackets=\XeTeXcharclass10
-\french@closebrackets=\XeTeXcharclass11
-\french@questionexclamation=\XeTeXcharclass12
-\french@punctthin=\XeTeXcharclass13
-\french@punctthick=\XeTeXcharclass14
-\french@punctguillstart=\XeTeXcharclass15
-\french@punctguillend=\XeTeXcharclass16
+\french@openbrackets=\XeTeXcharclass1
+\french@closebrackets=\XeTeXcharclass2
+\french@questionexclamation=\XeTeXcharclass3
+\french@punctthin=\XeTeXcharclass4
+\french@punctthick=\XeTeXcharclass5
+\french@punctguillstart=\XeTeXcharclass6
+\french@punctguillend=\XeTeXcharclass7
 )
 
 Package polyglossia Info: Default language is french
@@ -251,19 +139,19 @@ plain TeX and LaTeX
 ****************************************************
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\biditools.sty
 Package: biditools 2025/12/19 v2.9 Programming tools for bidi package
-\@bidi@envbody=\toks20
-\@bidi@emptytoks=\toks21
-\bidi@poscount=\count305
-\bidi@tempcountb=\count306
-\bidi@temptoksa=\toks22
-\bidi@temptoksb=\toks23
-\bidi@dummies=\count307
-\bidi@are@these@correct=\toks24
-\bidi@toks@lista=\toks25
-\bidi@toks@listb=\toks26
-\bidi@stack@length=\count308
-\bidi@empty@stack=\toks27
-\bidi@looprepeat@depth=\count309
+\@bidi@envbody=\toks17
+\@bidi@emptytoks=\toks18
+\bidi@poscount=\count296
+\bidi@tempcountb=\count297
+\bidi@temptoksa=\toks19
+\bidi@temptoksb=\toks20
+\bidi@dummies=\count298
+\bidi@are@these@correct=\toks21
+\bidi@toks@lista=\toks22
+\bidi@toks@listb=\toks23
+\bidi@stack@length=\count299
+\bidi@empty@stack=\toks24
+\bidi@looprepeat@depth=\count300
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.s
 ty
@@ -307,39 +195,39 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count310
+\c@abspage=\count301
 Package zref Info: New property: abspage on input line 67.
 )
 \@bidi@copyins@=\insert252
-\bidi@typesethour=\count311
-\bidi@typesetminute=\count312
+\bidi@typesethour=\count302
+\bidi@typesetminute=\count303
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\latex-xetex-bi
 di.def
 File: latex-xetex-bidi.def 2025/12/19 v1.5.6 bidi adaptations for `latex.ltx' f
 or XeTeX engine
-\bidi@n@everypar=\toks28
+\bidi@n@everypar=\toks25
 LaTeX Info: Redefining \centerline on input line 317.
 LaTeX Info: Redefining \leftline on input line 326.
 LaTeX Info: Redefining \rightline on input line 327.
 LaTeX Info: Redefining \underline on input line 335.
-\bidi@column@check@number=\count313
+\bidi@column@check@number=\count304
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\footnote-xetex
 -bidi.def
 File: footnote-xetex-bidi.def 2025/09/30 v1.6 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count314
-\footdir@toks=\toks29
+\c@footdir@label=\count305
+\footdir@toks=\toks26
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\report-xetex-b
 idi.def
 File: report-xetex-bidi.def 2025/12/19 v1.3 bidi adaptations for standard repor
 t class for XeTeX engine
 ))
-\bidi@digits=\count315
-\bidi@digits@charclass=\XeTeXcharclass17
-\bidi@sepmark@charclass=\XeTeXcharclass18
+\bidi@digits=\count306
+\bidi@digits@charclass=\XeTeXcharclass8
+\bidi@sepmark@charclass=\XeTeXcharclass9
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\arabicn
 umbers.sty
@@ -352,115 +240,30 @@ Package: hijrical 2010/07/12 v0.2 Islamic calendar
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count316
-\calc@Bcount=\count317
-\calc@Adimen=\dimen162
-\calc@Bdimen=\dimen163
+\calc@Acount=\count307
+\calc@Bcount=\count308
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count318
+\calc@Ccount=\count309
 \calc@Cskip=\skip53
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\cal-uti
 l.def
-\c@tmpA=\count319
-\c@tmpB=\count320
-\c@tmpC=\count321
-\c@tmpD=\count322
-\c@tmpE=\count323
-\c@tmpF=\count324
+\c@tmpA=\count310
+\c@tmpB=\count311
+\c@tmpC=\count312
+\c@tmpD=\count313
+\c@tmpE=\count314
+\c@tmpF=\count315
 )
-\c@Hijriday=\count325
-\c@Hijrimonth=\count326
-\c@Hijriyear=\count327
+\c@Hijriday=\count316
+\c@Hijrimonth=\count317
+\c@Hijriyear=\count318
 ))
-
-d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:16: Package fontspec Error: 
-(fontspec)                The font "Amiri" cannot be found; this may be but
-(fontspec)                usually is not a fontspec bug. Either there is a
-(fontspec)                typo in the font name/file, the font is not
-(fontspec)                installed (correctly), or there is a bug in the
-(fontspec)                underlying font loading engine (XeTeX/luaotfload).
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.16 
-     
-
-A font might not be found for many reasons.
- Check the spelling, where the font is installed etc. etc.
-
- When in doubt, ask someone for help!
-
-
-
-Package fontspec Info: 
-(fontspec)             Script 'Arabic' not explicitly supported within font
-(fontspec)             'Amiri'. Check the typeset output, and if it is okay
-(fontspec)             then ignore this warning. Otherwise a different font
-(fontspec)             should be chosen.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Amiri/BI" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Amiri/B" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Amiri/I" (it probably doesn't
-(fontspec)             exist).
-
-
-d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:16: Package fontspec Error: 
-(fontspec)                The font "Amiri" cannot be found; this may be but
-(fontspec)                usually is not a fontspec bug. Either there is a
-(fontspec)                typo in the font name/file, the font is not
-(fontspec)                installed (correctly), or there is a bug in the
-(fontspec)                underlying font loading engine (XeTeX/luaotfload).
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.16 
-     
-
-A font might not be found for many reasons.
- Check the spelling, where the font is installed etc. etc.
-
- When in doubt, ask someone for help!
-
-
-
-d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:16: Package fontspec Error: 
-(fontspec)                The font "Amiri" cannot be found; this may be but
-(fontspec)                usually is not a fontspec bug. Either there is a
-(fontspec)                typo in the font name/file, the font is not
-(fontspec)                installed (correctly), or there is a bug in the
-(fontspec)                underlying font loading engine (XeTeX/luaotfload).
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.16 
-     
-
-A font might not be found for many reasons.
- Check the spelling, where the font is installed etc. etc.
-
- When in doubt, ask someone for help!
-
-
 
 Package fontspec Info: 
 (fontspec)             Font family 'Amiri(0)' created for font 'Amiri' with
@@ -469,8 +272,14 @@ Package fontspec Info:
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Amiri/OT"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Amiri/OT"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Amiri/OT:script=arab;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Amiri/B/OT:script=arab;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Amiri/I/OT:script=arab;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Amiri/BI/OT:script=arab;language=dflt;"
 
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.s
@@ -479,23 +288,23 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks30
+\KV@toks@=\toks27
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count328
-\Gm@cntv=\count329
-\c@Gm@tempcnt=\count330
-\Gm@bindingoffset=\dimen164
-\Gm@wd@mp=\dimen165
-\Gm@odd@mp=\dimen166
-\Gm@even@mp=\dimen167
-\Gm@layoutwidth=\dimen168
-\Gm@layoutheight=\dimen169
-\Gm@layouthoffset=\dimen170
-\Gm@layoutvoffset=\dimen171
-\Gm@dimlist=\toks31
+\Gm@cnth=\count319
+\Gm@cntv=\count320
+\c@Gm@tempcnt=\count321
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks28
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.c
 fg))
@@ -551,8 +360,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 )
-\Gin@req@height=\dimen172
-\Gin@req@width=\dimen173
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\graphicx-xetex
 -bidi.def
@@ -561,10 +370,10 @@ kage for XeTeX engine
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count331
-\float@exts=\toks32
+\c@float@type=\count322
+\float@exts=\toks29
 \float@box=\box53
-\@float@everytoks=\toks33
+\@float@everytoks=\toks30
 \@floatcapt=\box54
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\float-xetex-bi
@@ -578,14 +387,14 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.st
 y
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen174
-\captionmargin=\dimen175
-\caption@leftmargin=\dimen176
-\caption@rightmargin=\dimen177
-\caption@width=\dimen178
-\caption@indent=\dimen179
-\caption@parindent=\dimen180
-\caption@hangindent=\dimen181
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
@@ -593,7 +402,6 @@ p \sbox \@tempboxa {#1: #2}\ifdim \wd \@tempboxa >\hsize \if@RTL \beginR \fi #1
 : #2\if@RTL \endR \fi \par \else \global \@minipagefalse \hb@xt@ \hsize {\if@RT
 L \beginR \fi \hfil \box \@tempboxa \hfil \if@RTL \endR \fi }\fi \vskip \belowc
 aptionskip  on input line 1175.
-Package caption Info: french babel package is loaded.
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\caption3-xetex
 -bidi.def
@@ -605,8 +413,8 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count332
-\c@continuedfloat=\count333
+\c@caption@flags=\count323
+\c@continuedfloat=\count324
 Package caption Info: float package is loaded.
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\caption-xetex-
@@ -618,9 +426,9 @@ ge for XeTeX engine
 sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count334
+\c@subfigure=\count325
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count335
+\c@subtable=\count326
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\t
 ikz.sty
@@ -630,9 +438,9 @@ sty
 s.sty
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 util-common.tex
-\pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen182
-\pgfutil@tempdimb=\dimen183
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 util-latex.def
@@ -656,33 +464,33 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 keys.code.tex
-\pgfkeys@pathtoks=\toks35
-\pgfkeys@temptoks=\toks36
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 keyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks37
+\pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen184
-\pgf@y=\dimen185
-\pgf@xa=\dimen186
-\pgf@ya=\dimen187
-\pgf@xb=\dimen188
-\pgf@yb=\dimen189
-\pgf@xc=\dimen190
-\pgf@yc=\dimen191
-\pgf@xd=\dimen192
-\pgf@yd=\dimen193
+\pgf@x=\dimen174
+\pgf@y=\dimen175
+\pgf@xa=\dimen176
+\pgf@ya=\dimen177
+\pgf@xb=\dimen178
+\pgf@yb=\dimen179
+\pgf@xc=\dimen180
+\pgf@yc=\dimen181
+\pgf@xd=\dimen182
+\pgf@yd=\dimen183
 \w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count336
-\c@pgf@countb=\count337
-\c@pgf@countc=\count338
-\c@pgf@countd=\count339
-\t@pgf@toka=\toks38
-\t@pgf@tokb=\toks39
-\t@pgf@tokc=\toks40
-\pgf@sys@id@count=\count340
+\r@pgf@reada=\read2
+\c@pgf@counta=\count327
+\c@pgf@countb=\count328
+\c@pgf@countc=\count329
+\c@pgf@countd=\count330
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count331
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
 gf.cfg
@@ -702,13 +510,13 @@ File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
 gfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )
-\pgfsys@objnum=\count341
+\pgfsys@objnum=\count332
 )))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
 gfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count342
-\pgfsyssoftpath@bigbuffer@items=\count343
+\pgfsyssoftpath@smallbuffer@items=\count333
+\pgfsyssoftpath@bigbuffer@items=\count334
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
 gfsysprotocol.code.tex
@@ -729,12 +537,12 @@ code.tex
 til.code.tex)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathp
 arser.code.tex
-\pgfmath@dimen=\dimen194
-\pgfmath@count=\count344
+\pgfmath@dimen=\dimen184
+\pgfmath@count=\count335
 \pgfmath@box=\box56
-\pgfmath@toks=\toks41
-\pgfmath@stack@operand=\toks42
-\pgfmath@stack@operation=\toks43
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
 unctions.code.tex)
@@ -758,39 +566,39 @@ unctions.integerarithmetics.code.tex)
 alc.code.tex)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
 loat.code.tex
-\c@pgfmathroundto@lastzeros=\count345
+\c@pgfmathroundto@lastzeros=\count336
 ))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.c
 ode.tex)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen195
-\pgf@picmaxx=\dimen196
-\pgf@picminy=\dimen197
-\pgf@picmaxy=\dimen198
-\pgf@pathminx=\dimen199
-\pgf@pathmaxx=\dimen256
-\pgf@pathminy=\dimen257
-\pgf@pathmaxy=\dimen258
-\pgf@xx=\dimen259
-\pgf@xy=\dimen260
-\pgf@yx=\dimen261
-\pgf@yy=\dimen262
-\pgf@zx=\dimen263
-\pgf@zy=\dimen264
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen265
-\pgf@path@lasty=\dimen266
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen267
-\pgf@shorten@start@additional=\dimen268
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorescopes.code.tex
@@ -798,19 +606,19 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count346
+\pgf@picture@serial@count=\count337
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen269
+\pgflinewidth=\dimen259
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen270
-\pgf@pt@y=\dimen271
-\pgf@pt@temp=\dimen272
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorequick.code.tex
@@ -827,14 +635,14 @@ File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen273
+\pgfarrowsep=\dimen263
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen274
-\pgf@sys@shading@range@num=\count347
-\pgf@shadingcount=\count348
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count338
+\pgf@shadingcount=\count339
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoreimage.code.tex
@@ -873,8 +681,8 @@ File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
 gfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen275
-\pgf@nodesepend=\dimen276
+\pgf@nodesepstart=\dimen265
+\pgf@nodesepend=\dimen266
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
 gfcomp-version-1-18.sty
@@ -893,10 +701,10 @@ code.tex))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 for.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen277
-\pgffor@skip=\dimen278
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@iter=\dimen267
+\pgffor@skip=\dimen268
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
 ))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz\tikz.code.tex
@@ -905,34 +713,34 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count349
-\pgfplotmarksize=\dimen279
+\pgf@plot@mark@count=\count340
+\pgfplotmarksize=\dimen269
 )
-\tikz@lastx=\dimen280
-\tikz@lasty=\dimen281
-\tikz@lastxsaved=\dimen282
-\tikz@lastysaved=\dimen283
-\tikz@lastmovetox=\dimen284
-\tikz@lastmovetoy=\dimen285
-\tikzleveldistance=\dimen286
-\tikzsiblingdistance=\dimen287
+\tikz@lastx=\dimen270
+\tikz@lasty=\dimen271
+\tikz@lastxsaved=\dimen272
+\tikz@lastysaved=\dimen273
+\tikz@lastmovetox=\dimen274
+\tikz@lastmovetoy=\dimen275
+\tikzleveldistance=\dimen276
+\tikzsiblingdistance=\dimen277
 \tikz@figbox=\box62
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count350
-\tikznumberofchildren=\count351
-\tikznumberofcurrentchild=\count352
-\tikz@fig@count=\count353
+\tikztreelevel=\count341
+\tikznumberofchildren=\count342
+\tikznumberofcurrentchild=\count343
+\tikz@fig@count=\count344
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
 dulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count354
-\pgfmatrixcurrentcolumn=\count355
-\pgf@matrix@numberofcolumns=\count356
+\pgfmatrixcurrentrow=\count345
+\pgfmatrixcurrentcolumn=\count346
+\pgf@matrix@numberofcolumns=\count347
 )
-\tikz@expandcount=\count357
+\tikz@expandcount=\count348
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarytopaths.code.tex
@@ -948,12 +756,12 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 .code.tex
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots
 core.code.tex
-\t@pgfplots@toka=\toks46
-\t@pgfplots@tokb=\toks47
-\t@pgfplots@tokc=\toks48
-\pgfplots@tmpa=\dimen288
-\c@pgfplots@coordindex=\count358
-\c@pgfplots@scanlineindex=\count359
+\t@pgfplots@toka=\toks43
+\t@pgfplots@tokb=\toks44
+\t@pgfplots@tokc=\toks45
+\pgfplots@tmpa=\dimen278
+\c@pgfplots@coordindex=\count349
+\c@pgfplots@scanlineindex=\count350
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfp
 lotssysgeneric.code.tex))
@@ -964,9 +772,9 @@ mpatib\pgfplotsoldpgfsupp_loader.code.tex
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks49
-\t@pgf@tokb=\toks50
-\t@pgf@tokc=\toks51
+\t@pgf@toka=\toks46
+\t@pgf@tokb=\toks47
+\t@pgf@tokc=\toks48
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfco
 mpatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -978,14 +786,14 @@ cture\pgfplotsliststructure.code.tex)
 cture\pgfplotsliststructureext.code.tex)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststru
 cture\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count360
+\c@pgfplotsarray@tmp=\count351
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststru
 cture\pgfplotsmatrix.code.tex)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable
 \pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count361
-\t@pgfplotstable@a=\toks52
+\c@pgfplotstable@counta=\count352
+\t@pgfplotstable@a=\toks49
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststru
 cture\pgfplotsdeque.code.tex)
@@ -997,13 +805,13 @@ plotsbinary.data.code.tex))
 plotsutil.verb.code.tex)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgf
 librarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count362
+\c@pgfplotslibrarysurf@no=\count353
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfl
 ibrarypgfplots.surfshading.pgfsys-xetex.def
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfl
 ibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count363
+\c@pgfplotslibrarysurf@streamlen=\count354
 ))))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgf
 plotscolormap.code.tex
@@ -1033,14 +841,14 @@ ticks.code.tex)
 /tikz/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
 duledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen289
-\pgfdecoratedremainingdistance=\dimen290
-\pgfdecoratedinputsegmentcompleteddistance=\dimen291
-\pgfdecoratedinputsegmentremainingdistance=\dimen292
-\pgf@decorate@distancetomove=\dimen293
-\pgf@decorate@repeatstate=\count364
-\pgfdecorationsegmentamplitude=\dimen294
-\pgfdecorationsegmentlength=\dimen295
+\pgfdecoratedcompleteddistance=\dimen279
+\pgfdecoratedremainingdistance=\dimen280
+\pgfdecoratedinputsegmentcompleteddistance=\dimen281
+\pgfdecoratedinputsegmentremainingdistance=\dimen282
+\pgf@decorate@distancetomove=\dimen283
+\pgf@decorate@repeatstate=\count355
+\pgfdecorationsegmentamplitude=\dimen284
+\pgfdecorationsegmentlength=\dimen285
 )
 \tikz@lib@dec@box=\box66
 )
@@ -1054,13 +862,13 @@ orations\pgflibrarydecorations.pathmorphing.code.tex))
 orations\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tik
 zlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count365
-\pgfplots@xmin@reg=\dimen296
-\pgfplots@xmax@reg=\dimen297
-\pgfplots@ymin@reg=\dimen298
-\pgfplots@ymax@reg=\dimen299
-\pgfplots@zmin@reg=\dimen300
-\pgfplots@zmax@reg=\dimen301
+\pgfplots@numplots=\count356
+\pgfplots@xmin@reg=\dimen286
+\pgfplots@xmax@reg=\dimen287
+\pgfplots@ymin@reg=\dimen288
+\pgfplots@ymax@reg=\dimen289
+\pgfplots@zmin@reg=\dimen290
+\pgfplots@zmax@reg=\dimen291
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibraryplotmarks.code.tex
@@ -1081,10 +889,10 @@ File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen302
-\pgfarrowlength=\dimen303
-\pgfarrowwidth=\dimen304
-\pgfarrowlinewidth=\dimen305
+\pgfarrowinset=\dimen292
+\pgfarrowlength=\dimen293
+\pgfarrowwidth=\dimen294
+\pgfarrowlinewidth=\dimen295
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarypositioning.code.tex
@@ -1109,29 +917,29 @@ File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.s
 ty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen306
-\lightrulewidth=\dimen307
-\cmidrulewidth=\dimen308
-\belowrulesep=\dimen309
-\belowbottomsep=\dimen310
-\aboverulesep=\dimen311
-\abovetopsep=\dimen312
-\cmidrulesep=\dimen313
-\cmidrulekern=\dimen314
-\defaultaddspace=\dimen315
-\@cmidla=\count366
-\@cmidlb=\count367
-\@aboverulesep=\dimen316
-\@belowrulesep=\dimen317
-\@thisruleclass=\count368
-\@lastruleclass=\count369
-\@thisrulewidth=\dimen318
+\heavyrulewidth=\dimen296
+\lightrulewidth=\dimen297
+\cmidrulewidth=\dimen298
+\belowrulesep=\dimen299
+\belowbottomsep=\dimen300
+\aboverulesep=\dimen301
+\abovetopsep=\dimen302
+\cmidrulesep=\dimen303
+\cmidrulekern=\dimen304
+\defaultaddspace=\dimen305
+\@cmidla=\count357
+\@cmidlb=\count358
+\@aboverulesep=\dimen306
+\@belowrulesep=\dimen307
+\@thisruleclass=\count359
+\@lastruleclass=\count360
+\@thisrulewidth=\dimen308
 ) (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen319
+\col@sep=\dimen309
 \ar@mcellbox=\box67
-\extrarowheight=\dimen320
-\NC@list=\toks53
+\extrarowheight=\dimen310
+\NC@list=\toks50
 \extratabsurround=\skip54
 \backup@length=\skip55
 \ar@cellbox=\box68
@@ -1145,9 +953,9 @@ or XeTeX engine
 ty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip56
-\multirow@cntb=\count370
+\multirow@cntb=\count361
 \multirow@dima=\skip57
-\bigstrutjot=\dimen321
+\bigstrutjot=\dimen311
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
@@ -1155,18 +963,18 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTright=\skip59
 \LTpre=\skip60
 \LTpost=\skip61
-\LTchunksize=\count371
-\LTcapwidth=\dimen322
+\LTchunksize=\count362
+\LTcapwidth=\dimen312
 \LT@head=\box69
 \LT@firsthead=\box70
 \LT@foot=\box71
 \LT@lastfoot=\box72
 \LT@gbox=\box73
-\LT@cols=\count372
-\LT@rows=\count373
-\c@LT@tables=\count374
-\c@LT@chunks=\count375
-\LT@p@ftn=\toks54
+\LT@cols=\count363
+\LT@rows=\count364
+\c@LT@tables=\count365
+\c@LT@chunks=\count366
+\LT@p@ftn=\toks51
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\longtable-xete
 x-bidi.def
@@ -1176,9 +984,9 @@ ackage for XeTeX engine
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.s
 ty
 Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
-\everycr=\toks55
+\everycr=\toks52
 \minrowclearance=\skip62
-\rownum=\count376
+\rownum=\count367
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\colortbl-xetex
 -bidi.def
@@ -1187,13 +995,13 @@ kage for XeTeX engine
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen323
-\TX@old@table=\dimen324
-\TX@old@col=\dimen325
-\TX@target=\dimen326
-\TX@delta=\dimen327
-\TX@cols=\count377
-\TX@ftn=\toks56
+\TX@col@width=\dimen313
+\TX@old@table=\dimen314
+\TX@old@col=\dimen315
+\TX@target=\dimen316
+\TX@delta=\dimen317
+\TX@cols=\count368
+\TX@ftn=\toks53
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\tabularx-xetex
 -bidi.def
@@ -1218,27 +1026,13 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip74
 \f@nch@widthC=\skip75
 \f@nch@widthR=\skip76
-\@temptokenb=\toks57
+\@temptokenb=\toks54
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\fancyhdr-xetex
 -bidi.def
 File: fancyhdr-xetex-bidi.def 2025/09/03 v1.0 bidi adaptations for fancyhdr pac
 kage for XeTeX engine
 )
-
-d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:68: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 ...all\textcolor{darkgray}{AIAC - IESCA 07}}p
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
@@ -1271,8 +1065,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip103
 \cftfigindent=\skip104
 \cftfignumwidth=\skip105
-\c@lofdepth=\count378
-\c@lotdepth=\count379
+\c@lofdepth=\count369
+\c@lotdepth=\count370
 \cftbeforelottitleskip=\skip106
 \cftafterlottitleskip=\skip107
 \cftbeforetabskip=\skip108
@@ -1286,18 +1080,18 @@ ge for XeTeX engine
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.s
 ty
-\lst@mode=\count380
+\lst@mode=\count371
 \lst@gtempboxa=\box74
-\lst@token=\toks58
-\lst@length=\count381
-\lst@currlwidth=\dimen328
-\lst@column=\count382
-\lst@pos=\count383
-\lst@lostspace=\dimen329
-\lst@width=\dimen330
-\lst@newlines=\count384
-\lst@lineno=\count385
-\lst@maxwidth=\dimen331
+\lst@token=\toks55
+\lst@length=\count372
+\lst@currlwidth=\dimen318
+\lst@column=\count373
+\lst@pos=\count374
+\lst@lostspace=\dimen319
+\lst@width=\dimen320
+\lst@newlines=\count375
+\lst@lineno=\count376
+\lst@maxwidth=\dimen321
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.s
 ty
@@ -1306,8 +1100,8 @@ File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.st
 y
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count386
-\lst@skipnumbers=\count387
+\c@lstnumber=\count377
+\lst@skipnumbers=\count378
 \lst@framebox=\box75
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.c
@@ -1328,6 +1122,49 @@ kage for XeTeX engine
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/background\backgrou
+nd.sty
+Package: background 2014/03/04 v2.1 background material
+
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.t
+ex
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.
+tex
+\XKV@toks=\toks56
+\XKV@tempa@toks=\toks57
+)
+\XKV@depth=\count379
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/everypage\everypage
+.sty
+Package: everypage 2020/10/17 R2.0b Hooks to run on every page
+
+
+Package everypage Warning: Functionality similar to this package has recently
+(everypage)                been implemented in LaTeX. This package is now in
+(everypage)                legacy status.
+(everypage)                Please, don't use it in new documents and packages.
+
+
+Package everypage Warning: You appear to be running a version of LaTeX
+(everypage)                providing the new functionality.
+(everypage)                Doing the best to deliver the original `everypage`
+(everypage)                interface on top of it. Strict equivalence is
+(everypage)                not possible, breakage may occur.
+(everypage)                If truly needed, Use `everypage-1x` to force the
+(everypage)                loading of an older code base.
+
+)
+(C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks58
+\AP@partial=\box76
+\AP@footins=\box77
+))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.s
 ty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -1355,16 +1192,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 .sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count388
+\c@section@level=\count380
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringe
 nc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen332
-\Hy@linkcounter=\count389
-\Hy@pagecounter=\count390
+\@linkdim=\dimen322
+\Hy@linkcounter=\count381
+\Hy@pagecounter=\count382
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -1373,7 +1210,7 @@ File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 ty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count391
+\Hy@SavedSpaceFactor=\count383
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -1386,13 +1223,13 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count392
+\c@Hy@tempcnt=\count384
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen333
+\XeTeXLinkMargin=\dimen323
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1402,9 +1239,9 @@ calc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count393
-\Field@Width=\dimen334
-\Fld@charsize=\dimen335
+\Fld@menulength=\count385
+\Field@Width=\dimen324
+\Fld@charsize=\dimen325
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -1412,19 +1249,19 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring ON on input line 6096.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count394
-\c@Item=\count395
-\c@Hfootnote=\count396
+\Hy@abspage=\count386
+\c@Item=\count387
+\c@Hfootnote=\count388
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
-\pdfm@box=\box76
-\c@Hy@AnnotLevel=\count397
-\HyField@AnnotCount=\count398
-\Fld@listcount=\count399
-\c@bookmark@seq@number=\count400
+\pdfm@box=\box78
+\c@Hy@AnnotLevel=\count389
+\HyField@AnnotCount=\count390
+\Fld@listcount=\count391
+\c@bookmark@seq@number=\count392
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\reru
 nfilecheck.sty
@@ -1455,11 +1292,11 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 ty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip112
-\enit@outerparindent=\dimen336
+\enit@outerparindent=\dimen326
 \enit@toks=\toks59
-\enit@inbox=\box77
-\enit@count@id=\count401
-\enitdp@description=\count402
+\enit@inbox=\box79
+\enit@count@id=\count393
+\enitdp@description=\count394
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
@@ -1471,7 +1308,7 @@ Package: amstext 2024/11/17 v2.01 AMS text
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks60
-\ex@=\dimen337
+\ex@=\dimen327
 ))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\amstext-xetex-
 bidi.def
@@ -1480,52 +1317,52 @@ ge for XeTeX engine
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen338
+\pmbraise@=\dimen328
 ) (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
 y
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count403
+\inf@bad=\count395
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count404
-\leftroot@=\count405
+\uproot@=\count396
+\leftroot@=\count397
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count406
-\DOTSCASE@=\count407
+\classnum@=\count398
+\DOTSCASE@=\count399
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box78
-\strutbox@=\box79
+\Mathstrutbox@=\box80
+\strutbox@=\box81
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen339
+\big@size=\dimen329
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count408
+\macc@depth=\count400
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count409
+\c@MaxMatrixCols=\count401
 \dotsspace@=\muskip18
-\c@parentequation=\count410
-\dspbrk@lvl=\count411
+\c@parentequation=\count402
+\dspbrk@lvl=\count403
 \tag@help=\toks61
-\row@=\count412
-\column@=\count413
-\maxfields@=\count414
+\row@=\count404
+\column@=\count405
+\maxfields@=\count406
 \andhelp@=\toks62
-\eqnshift@=\dimen340
-\alignsep@=\dimen341
-\tagshift@=\dimen342
-\tagwidth@=\dimen343
-\totwidth@=\dimen344
-\lineht@=\dimen345
+\eqnshift@=\dimen330
+\alignsep@=\dimen331
+\tagshift@=\dimen332
+\tagwidth@=\dimen333
+\totwidth@=\dimen334
+\lineht@=\dimen335
 \@envbody=\toks63
 \multlinegap=\skip114
 \multlinetaggap=\skip115
@@ -1560,8 +1397,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.t
 ex
-\xs_counta=\count415
-\xs_countb=\count416
+\xs_counta=\count407
+\xs_countb=\count408
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
@@ -1590,7 +1427,7 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip116
-\c@mdf@globalstyle@cnt=\count417
+\c@mdf@globalstyle@cnt=\count409
 \mdf@skipabove@length=\skip117
 \mdf@skipbelow@length=\skip118
 \mdf@leftmargin@length=\skip119
@@ -1635,11 +1472,11 @@ Package: needspace 2025/03/13 v1.3e reserve vertical space
 .mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box80
-\mdf@footnotebox=\box81
-\mdf@splitbox@one=\box82
-\mdf@splitbox@two=\box83
-\mdf@splitbox@save=\box84
+\mdf@frametitlebox=\box82
+\mdf@footnotebox=\box83
+\mdf@splitbox@one=\box84
+\mdf@splitbox@two=\box85
+\mdf@splitbox@save=\box86
 \mdfsplitboxwidth=\skip156
 \mdfsplitboxtotalwidth=\skip157
 \mdfsplitboxheight=\skip158
@@ -1667,16 +1504,16 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip180
 \mdfsubtitleheight=\skip181
 \mdfsubsubtitleheight=\skip182
-\c@mdfcountframes=\count418
+\c@mdfcountframes=\count410
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count419
-\c@mdf@env@i=\count420
-\c@mdf@env@ii=\count421
-\c@mdf@zref@counter=\count422
+\mdf@envdepth=\count411
+\c@mdf@env@i=\count412
+\c@mdf@env@ii=\count413
+\c@mdf@zref@counter=\count414
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\mdframed-xetex
@@ -1690,24 +1527,24 @@ kage for XeTeX engine
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count423
-\l__lipsum_a_int=\count424
-\l__lipsum_b_int=\count425
+\g__lipsum_par_int=\count415
+\l__lipsum_a_int=\count416
+\l__lipsum_b_int=\count417
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.t
 ex))
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.s
 ty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box85
+\ttl@box=\box87
 \beforetitleunit=\skip183
 \aftertitleunit=\skip184
-\ttl@plus=\dimen346
-\ttl@minus=\dimen347
+\ttl@plus=\dimen336
+\ttl@minus=\dimen337
 \ttl@toksa=\toks66
-\titlewidth=\dimen348
-\titlewidthlast=\dimen349
-\titlewidthfirst=\dimen350
+\titlewidth=\dimen338
+\titlewidthlast=\dimen339
+\titlewidthfirst=\dimen340
 )
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/bidi\titlesec-xetex
 -bidi.def
@@ -1722,26 +1559,26 @@ or XeTeX engine
 No file rapport_stage_technique.aux.
 \openout1 = `rapport_stage_technique.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1749,57 +1586,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 151.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 151.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 151.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 151.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 151.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 151.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 151.
-LaTeX Font Info:    Redeclaring math accent \check on input line 151.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 151.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 151.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 151.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 151.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 148.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 148.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 148.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 148.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 148.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 148.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 148.
+LaTeX Font Info:    Redeclaring math accent \check on input line 148.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 148.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 148.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 148.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 148.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 151.
+(Font)              `operators' in the math version `normal' on input line 148.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 151.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 148.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 151.
+(Font)              `operators' in the math version `bold' on input line 148.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 151.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 148.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 151.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 151.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 151.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 151.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 151.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 148.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 151.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 151.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 151.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 148.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 151.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 148.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1848,17 +1685,14 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\c@lstlisting=\count426
-Package hyperref Info: Link coloring ON on input line 151.
+\c@lstlisting=\count418
+Package hyperref Info: Link coloring ON on input line 148.
 \@outlinefile=\write4
 \openout4 = `rapport_stage_technique.out'.
 
 
 Package hyperref Warning: Rerun to get /PageLabels entry.
 
-[1
-
-]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: a4paper
@@ -1893,13 +1727,12 @@ Package hyperref Warning: Rerun to get /PageLabels entry.
 
 File: figures/logo_aiac.png Graphic file (type bmp)
 <figures/logo_aiac.png>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 175
+LaTeX Font Info:    Trying to load font information for U+msa on input line 194
 .
-
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 175
+LaTeX Font Info:    Trying to load font information for U+msb on input line 194
 .
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1907,63 +1740,51 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: figures/logo_airports_of_morocco.jpg Graphic file (type bmp)
 <figures/logo_airports_of_morocco.jpg>
+LaTeX Font Info:    Font shape `TU/Amiri(0)/bx/n' in size <14.4> not available
+(Font)              Font shape `TU/Amiri(0)/b/n' tried instead on input line 21
+1.
 
-
-LaTeX Font Warning: Font shape `TU/Amiri(0)/bx/n' undefined
-(Font)              using `TU/Amiri(0)/m/n' instead on input line 192.
 
 d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:192: Font TU/Amiri(0)/m/n/14.4=Amiri/OT at 14.4pt not loadable: Metric (TFM) f
-ile or installed font not found.
-<to be read again> 
-                   relax 
-l.192   \end{minipage}}
-                       
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
+:227: Package xcolor Error: Undefined color `darkgrey'.
 
-Missing character: There is no أ in font nullfont!
-Missing character: There is no ك in font nullfont!
-Missing character: There is no ا in font nullfont!
-Missing character: There is no د in font nullfont!
-Missing character: There is no ي in font nullfont!
-Missing character: There is no م in font nullfont!
-Missing character: There is no ي in font nullfont!
-Missing character: There is no ة in font nullfont!
-Missing character: There is no م in font nullfont!
-Missing character: There is no ح in font nullfont!
-Missing character: There is no م in font nullfont!
-Missing character: There is no د in font nullfont!
-Missing character: There is no ا in font nullfont!
-Missing character: There is no ل in font nullfont!
-Missing character: There is no س in font nullfont!
-Missing character: There is no ا in font nullfont!
-Missing character: There is no د in font nullfont!
-Missing character: There is no س in font nullfont!
-Missing character: There is no ا in font nullfont!
-Missing character: There is no ل in font nullfont!
-Missing character: There is no د in font nullfont!
-Missing character: There is no و in font nullfont!
-Missing character: There is no ل in font nullfont!
-Missing character: There is no ي in font nullfont!
-Missing character: There is no ة in font nullfont!
-Missing character: There is no ل in font nullfont!
-Missing character: There is no ل in font nullfont!
-Missing character: There is no ط in font nullfont!
-Missing character: There is no ي in font nullfont!
-Missing character: There is no ر in font nullfont!
-Missing character: There is no ا in font nullfont!
-Missing character: There is no ن in font nullfont!
-Missing character: There is no ا in font nullfont!
-Missing character: There is no ل in font nullfont!
-Missing character: There is no م in font nullfont!
-Missing character: There is no د in font nullfont!
-Missing character: There is no ن in font nullfont!
-Missing character: There is no ي in font nullfont!
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 {\bfseries\large\color{darkgrey}
+                                       Rapport de Stage Technique}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
+:231: Package xcolor Error: Undefined color `darkgrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 {\normalsize\color{darkgrey}
+                                   Présenté par}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
+:235: Package xcolor Error: Undefined color `darkgrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 {\bfseries\large\color{darkgrey}
+                                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 [1
+
 
 ] [1
 
@@ -1973,123 +1794,123 @@ Missing character: There is no ي in font nullfont!
 
 ]
 
-LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 357
+LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 376
 .
 
 
-LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 357
+LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 376
 .
 
 
-LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 35
+LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 37
+7.
+
+
+LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 37
+7.
+
+
+LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 37
 8.
 
 
-LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 35
+LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 37
 8.
 
 
-LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 35
+LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 37
 9.
 
 
-LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 35
+LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 37
 9.
 
 
-LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 36
-0.
-
-
-LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 36
-0.
-
-
-LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 361
+LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 380
 .
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 361
+LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 380
 .
 
 
-LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 362.
+LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 381.
 
 
 
-LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 362.
+LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 381.
 
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 363
+LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 382
 .
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 363
+LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 382
 .
 
 
-LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 364
+LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 383
 .
 
 
-LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 364
+LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 383
 .
 
 
-LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 365
+LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 384
 .
 
 
-LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 365
+LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 384
 .
 
 
-LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 366
+LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 385
 .
 
 
-LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 366
+LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 385
 .
 
 
-LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 367
+LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 386
 .
 
 
-LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 367
+LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 386
 .
 
 
-LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 368.
+LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 387.
 
 
 
-LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 368.
+LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 387.
 
 
 
-LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 36
-9.
+LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 38
+8.
 
 
-LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 36
-9.
+LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 38
+8.
 
 
-LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 370
+LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 389
 .
 
 
-LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 370
+LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 389
 .
 
 
-LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 371
+LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 390
 .
 
 
-LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 371
+LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 390
 .
 
 [4
@@ -2114,7 +1935,7 @@ No file rapport_stage_technique.lot.
 ]
 Chapitre 1.
 
-Overfull \hbox (22.64607pt too wide) in paragraph at lines 416--416
+Overfull \hbox (22.64607pt too wide) in paragraph at lines 435--435
 []|\TU/lmr/bx/n/24.88 Contexte Général et Analyse de l’Exis-[]
  []
 
@@ -2122,89 +1943,89 @@ Overfull \hbox (22.64607pt too wide) in paragraph at lines 416--416
 
 ]
 Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 486.
+although it is yet undefined on input line 505.
 
 
-Package acronym Warning: Acronym IoT is not defined on input line 486.
+Package acronym Warning: Acronym IoT is not defined on input line 505.
 
 
-Package acronym Warning: Acronym IoT is not defined on input line 486.
+Package acronym Warning: Acronym IoT is not defined on input line 505.
 
 
-LaTeX Warning: Citation `ref1' on page 10 undefined on input line 488.
+LaTeX Warning: Citation `ref1' on page 10 undefined on input line 507.
 
 [10] [11]
 Chapitre 2.
 
 LaTeX Warning: Reference `fig:architecture' on page 12 undefined on input line 
-525.
+544.
 
 Package acronym Info: Label `acro:MQTT' newly defined as it shall be overridden
 
-although it is yet undefined on input line 550.
+although it is yet undefined on input line 569.
 
-Package acronym Warning: Acronym MQTT is not defined on input line 550.
+Package acronym Warning: Acronym MQTT is not defined on input line 569.
 
 
-Package acronym Warning: Acronym MQTT is not defined on input line 550.
+Package acronym Warning: Acronym MQTT is not defined on input line 569.
 
 Package acronym Info: Label `acro:TCP' newly defined as it shall be overridden
-although it is yet undefined on input line 550.
+although it is yet undefined on input line 569.
 
-Package acronym Warning: Acronym TCP is not defined on input line 550.
+Package acronym Warning: Acronym TCP is not defined on input line 569.
 
 
-Package acronym Warning: Acronym TCP is not defined on input line 550.
+Package acronym Warning: Acronym TCP is not defined on input line 569.
 
 Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
-although it is yet undefined on input line 550.
+although it is yet undefined on input line 569.
 
-Package acronym Warning: Acronym IP is not defined on input line 550.
+Package acronym Warning: Acronym IP is not defined on input line 569.
 
 
-Package acronym Warning: Acronym IP is not defined on input line 550.
+Package acronym Warning: Acronym IP is not defined on input line 569.
 
 Package acronym Info: Label `acro:REST' newly defined as it shall be overridden
 
-although it is yet undefined on input line 552.
+although it is yet undefined on input line 571.
 
-Package acronym Warning: Acronym REST is not defined on input line 552.
+Package acronym Warning: Acronym REST is not defined on input line 571.
 
 
-Package acronym Warning: Acronym REST is not defined on input line 552.
+Package acronym Warning: Acronym REST is not defined on input line 571.
 
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 552.
+although it is yet undefined on input line 571.
 
-Package acronym Warning: Acronym API is not defined on input line 552.
-
-
-Package acronym Warning: Acronym API is not defined on input line 552.
+Package acronym Warning: Acronym API is not defined on input line 571.
 
 
-LaTeX Warning: Reference `tab:uc' on page 12 undefined on input line 563.
+Package acronym Warning: Acronym API is not defined on input line 571.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
+LaTeX Warning: Reference `tab:uc' on page 12 undefined on input line 582.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 [][]|\TU/lmr/m/n/12 Export PDF/CSV des[]
  []
 
 [12
 
 ]
-Overfull \hbox (7.32457pt too wide) in paragraph at lines 637--637
+Overfull \hbox (7.32457pt too wide) in paragraph at lines 656--656
 [][]|\TU/lmr/bx/n/12 Consommation| []
  []
 
 [13]
 Chapitre 3.
 Package acronym Info: Label `acro:ADC' newly defined as it shall be overridden
-although it is yet undefined on input line 672.
+although it is yet undefined on input line 691.
 
-Package acronym Warning: Acronym ADC is not defined on input line 672.
+Package acronym Warning: Acronym ADC is not defined on input line 691.
 
 
-Package acronym Warning: Acronym ADC is not defined on input line 672.
+Package acronym Warning: Acronym ADC is not defined on input line 691.
 
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.s
@@ -2212,9 +2033,9 @@ ty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 675.
+nput line 694.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 676.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 695.
  [14
 
 ] [15]
@@ -2222,7 +2043,7 @@ Chapitre 4.
 [16
 
 ]
-Package pgfplots info on input line 851: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 870: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
  [17] [18
 
@@ -2235,12 +2056,12 @@ Annexe A.
 ]
 Annexe B.
 Package acronym Info: Label `acro:SSH' newly defined as it shall be overridden
-although it is yet undefined on input line 998.
+although it is yet undefined on input line 1017.
 
-Package acronym Warning: Acronym SSH is not defined on input line 998.
+Package acronym Warning: Acronym SSH is not defined on input line 1017.
 
 
-Package acronym Warning: Acronym SSH is not defined on input line 998.
+Package acronym Warning: Acronym SSH is not defined on input line 1017.
 
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.s
@@ -2263,9 +2084,6 @@ L3 programming layer <2025-12-24>
  ***********
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were undefined references.
 
 
@@ -2282,12 +2100,12 @@ Package rerunfilecheck Info: Checksums for `rapport_stage_technique.out':
 (rerunfilecheck)             After:  088F12C36FA5B37AF4CBAFCE6ACF14CF;6128.
  ) 
 Here is how much of TeX's memory you used:
- 46023 strings out of 402987
- 1073162 string characters out of 5447696
- 1976890 words of memory out of 5000000
- 73993 multiletter control sequences out of 15000+600000
- 636583 words of font info for 83 fonts, out of 8000000 for 9000
+ 44539 strings out of 402987
+ 1043719 string characters out of 5447696
+ 1940687 words of memory out of 5000000
+ 72516 multiletter control sequences out of 15000+600000
+ 633664 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,17n,94p,1266b,2414s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,94p,1266b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on rapport_stage_technique.pdf (24 pages).
+Output written on rapport_stage_technique.pdf (23 pages).

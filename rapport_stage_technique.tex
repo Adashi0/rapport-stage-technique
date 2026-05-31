@@ -4,11 +4,7 @@
 %---------------------------------------------------------------------
 % ENCODAGE & LANGUE
 %---------------------------------------------------------------------
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[french, english]{babel}
-\selectlanguage{french}
-
+\usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{french}
 \setotherlanguage[numerals=maghrib]{arabic}
@@ -65,7 +61,7 @@
 \fancyhead[L]{\small\textcolor{primary}{\leftmark}}
 \fancyhead[R]{\small\textcolor{darkgray}{Rapport PFA — 2027}}
 \fancyfoot[C]{\thepage}
-\fancyfoot[R]{\small\textcolor{darkgray}{AIAC - IESCA 07}}p
+\fancyfoot[R]{\small\textcolor{darkgray}{AIAC - IESCA 07}}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -101,6 +97,7 @@
 %---------------------------------------------------------------------
 % HYPERLIENS
 %---------------------------------------------------------------------
+\usepackage[pages=some]{background}
 \usepackage[
   colorlinks=true,
   linkcolor=primary,
@@ -157,12 +154,34 @@
 \begin{titlepage}
 \newgeometry{top=1.2cm, bottom=1.2cm, left=1.8cm, right=1.8cm}
   
-\begin{tikzpicture}[remember picture, overlay]
-  \draw[primary, line width=1.2pt, dash pattern=on 5pt off 3.5pt]
-    ([xshift=1.4cm, yshift=-1.2cm] current page.north west)
-    rectangle
-    ([xshift=-1.4cm, yshift=1.2cm] current page.south east);
-\end{tikzpicture}
+% \begin{tikzpicture}[remember picture, overlay]
+%   \draw[primary, line width=1.2pt, dash pattern=on 5pt off 3.5pt]
+%     ([xshift=1.4cm, yshift=-1.2cm] current page.north west)
+%     rectangle
+%     ([xshift=-1.4cm, yshift=1.2cm] current page.south east);
+% \end{tikzpicture}
+
+% \begin{tikzpicture}[remember picture, overlay]
+%   \draw[primary, line width=1.5pt]
+%     ([xshift=1.4cm, yshift=-1.2cm] current page.north west)
+%     rectangle
+%     ([xshift=-1.4cm, yshift=1.2cm] current page.south east);
+% \end{tikzpicture}
+
+\backgroundsetup{
+  scale   = 1,
+  angle   = 0,
+  opacity = 1,
+  contents = {
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[primary, line width=1.2pt]
+        ([xshift=1.4cm,  yshift=-1.2cm] current page.north west)
+        rectangle
+        ([xshift=-1.4cm, yshift=1.2cm]  current page.south east);
+    \end{tikzpicture}
+  }
+}
+\BgThispage
  
 \begin{center}
  
@@ -176,7 +195,7 @@
 \hfill%
 \begin{minipage}[c]{0.30\textwidth}
   \centering
-  \includegraphics[height=2.2cm]{figures/logo_airports_of_morocco.jpg} 
+  \includegraphics[height=3cm]{figures/logo_airports_of_morocco.jpg} 
 \end{minipage}
  
 \vspace{0.45cm}
@@ -200,20 +219,20 @@
 \vspace{0.25cm}
  
 {\bfseries\normalsize\color{primary}
-  Cycle de Formation Ingénieur en Electronique de la Sécurité de\\ la
+  Cycle de Formation Ingénieur en Electronique de la Sécurité\\ de la
 Circulation Aérienne}
  
 \vspace{1.4cm}
  
-{\fontsize{20}{24}\selectfont Stage en Milieu Professionnel}
- 
+{\bfseries\large\color{darkgrey} Rapport de Stage Technique}
+
 \vspace{2.0cm}
  
-{\normalsize Présenté par}
+{\normalsize\color{darkgrey} Présenté par}
  
 \vspace{0.5cm}
  
-{\bfseries\large
+{\bfseries\large\color{darkgrey}
   NOM et Prénom 1 \\[5pt]
   NOM et Prénom 2}
  
