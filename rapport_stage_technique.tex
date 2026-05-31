@@ -1,0 +1,1048 @@
+% !TEX program = xelatex
+\documentclass[12pt, a4paper, oneside]{report}
+
+%---------------------------------------------------------------------
+% ENCODAGE & LANGUE
+%---------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french, english]{babel}
+\selectlanguage{french}
+
+\usepackage{polyglossia}
+\setmainlanguage{french}
+\setotherlanguage[numerals=maghrib]{arabic}
+\newfontfamily\arabicfont[Script=Arabic]{Amiri} % ou Arial, Times New Roman
+
+%---------------------------------------------------------------------
+% MISE EN PAGE
+%---------------------------------------------------------------------
+\usepackage[
+  top=2.5cm, bottom=2.5cm,
+  left=3cm,  right=2.5cm,
+  headheight=15pt
+]{geometry}
+
+%---------------------------------------------------------------------
+% COULEURS
+%---------------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{primary}{RGB}{0, 0, 128}       % Bleu
+\definecolor{secondary}{RGB}{230, 57, 70}    % Rouge accent
+\definecolor{lightgray}{RGB}{245, 245, 245}
+\definecolor{darkgray}{RGB}{60, 60, 60}
+\definecolor{codegreen}{RGB}{0, 128, 0}
+\definecolor{codepurple}{RGB}{128, 0, 128}
+
+%---------------------------------------------------------------------
+% GRAPHIQUES & FIGURES
+%---------------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, shadows, calc}
+
+%---------------------------------------------------------------------
+% TABLEAUX
+%---------------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{tabularx}
+
+%---------------------------------------------------------------------
+% EN-TÊTES & PIEDS DE PAGE
+%---------------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{primary}{\leftmark}}
+\fancyhead[R]{\small\textcolor{darkgray}{Rapport PFA — 2027}}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\small\textcolor{darkgray}{AIAC - IESCA 07}}p
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%---------------------------------------------------------------------
+% TABLE DES MATIÈRES
+%---------------------------------------------------------------------
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\bfseries\color{primary}}
+\renewcommand{\cftsecfont}{\color{darkgray}}
+\setlength{\cftbeforechapskip}{6pt}
+
+%---------------------------------------------------------------------
+% CODE SOURCE
+%---------------------------------------------------------------------
+\usepackage{listings}
+\lstset{
+  backgroundcolor=\color{lightgray},
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{primary}\bfseries,
+  commentstyle=\color{codegreen}\itshape,
+  stringstyle=\color{codepurple},
+  numberstyle=\tiny\color{darkgray},
+  numbers=left,
+  frame=single,
+  framerule=0.4pt,
+  rulecolor=\color{primary},
+  breaklines=true,
+  captionpos=b,
+  tabsize=2,
+  showstringspaces=false
+}
+
+%---------------------------------------------------------------------
+% HYPERLIENS
+%---------------------------------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=primary,
+  citecolor=secondary,
+  urlcolor=primary,
+  pdftitle={Rapport PFE — Développement d'une Plateforme IoT},
+  pdfauthor={Yassine El Amrani},
+  pdfsubject={Projet de Fin d'Études}
+]{hyperref}
+
+%---------------------------------------------------------------------
+% DIVERS
+%---------------------------------------------------------------------
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{amsmath, amssymb}
+\usepackage{acronym}
+\usepackage{pifont}
+\usepackage{mdframed}
+\usepackage{lipsum}  % texte lorem ipsum
+
+% Style des titres de chapitres
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{primary}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{darkgray}}
+  {\thesubsection}{1em}{}
+
+% Environnement "remarque"
+\newmdenv[
+  linecolor=primary,
+  backgroundcolor=primary!5,
+  linewidth=2pt,
+  topline=false, rightline=false, bottomline=false,
+  innerleftmargin=10pt
+]{remarque}
+
+%=====================================================================
+\begin{document}
+\onehalfspacing
+
+%=====================================================================
+% PAGE DE GARDE
+%=====================================================================
+\begin{titlepage}
+\newgeometry{top=1.2cm, bottom=1.2cm, left=1.8cm, right=1.8cm}
+  
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[primary, line width=1.2pt, dash pattern=on 5pt off 3.5pt]
+    ([xshift=1.4cm, yshift=-1.2cm] current page.north west)
+    rectangle
+    ([xshift=-1.4cm, yshift=1.2cm] current page.south east);
+\end{tikzpicture}
+ 
+\begin{center}
+ 
+\vspace{0.3cm}
+ 
+% LOGOS
+\begin{minipage}[c]{0.30\textwidth}
+  \centering
+    \includegraphics[height=2.2cm]{figures/logo_aiac.png} 
+\end{minipage}%
+\hfill%
+\begin{minipage}[c]{0.30\textwidth}
+  \centering
+  \includegraphics[height=2.2cm]{figures/logo_airports_of_morocco.jpg} 
+\end{minipage}
+ 
+\vspace{0.45cm}
+ 
+% Banniere etablissement
+\setlength{\fboxsep}{5pt}
+
+\colorbox{primary}{%
+  \begin{minipage}{0.88\textwidth}
+    \centering
+    {\bfseries\large\color{white}
+      \textarabic{أكاديمية محمد السادس الدولية للطيران المدني}}
+  \end{minipage}}
+  
+  \colorbox{primary}{%
+  \begin{minipage}{0.88\textwidth}
+    \centering
+    {\bfseries\large\color{white} Académie Internationale Mohammed VI de L'Aviation Civile}
+  \end{minipage}}
+ 
+\vspace{0.25cm}
+ 
+{\bfseries\normalsize\color{primary}
+  Cycle de Formation Ingénieur en Electronique de la Sécurité de\\ la
+Circulation Aérienne}
+ 
+\vspace{1.4cm}
+ 
+{\fontsize{20}{24}\selectfont Stage en Milieu Professionnel}
+ 
+\vspace{2.0cm}
+ 
+{\normalsize Présenté par}
+ 
+\vspace{0.5cm}
+ 
+{\bfseries\large
+  NOM et Prénom 1 \\[5pt]
+  NOM et Prénom 2}
+ 
+\vspace{1.6cm}
+ 
+{\color{primary}\rule{0.88\textwidth}{1.5pt}}
+ 
+\vspace{0.5cm}
+ 
+{\bfseries\Large\color{primary}
+  Le thème du stage}
+ 
+\vspace{0.5cm}
+ 
+{\color{primary}\rule{0.88\textwidth}{1.5pt}}
+ 
+\vspace{1.2cm}
+ 
+\begin{minipage}{0.75\textwidth}
+  \begin{tabbing}
+    \hspace{3.2cm} \= \kill
+    Encadrant(s) : \> M. NOM et Prénom 1 \\[5pt]
+                   \> M. NOM et Prénom 2 \\[12pt]
+    Tuteur :       \> M. NOM et Prénom 3 \\
+
+  \end{tabbing}
+\end{minipage}
+ 
+\vfill
+ 
+\setlength{\fboxsep}{5pt}
+\colorbox{primary}{%
+  \begin{minipage}{0.88\textwidth}
+    \centering
+    {\bfseries\large\color{white} Année académique \quad 2026--2027}
+  \end{minipage}}
+ 
+\vspace{0.3cm}
+ 
+\end{center}
+ 
+\restoregeometry
+\end{titlepage}
+
+%=====================================================================
+% DÉDICACE
+%=====================================================================
+\newpage
+\thispagestyle{empty}
+\vspace*{5cm}
+\begin{center}
+  \itshape\Large
+  \textcolor{primary}{À mes parents,}\\[0.5cm]
+  pour leur soutien indéfectible tout au long de ce parcours.\\[0.5cm]
+  À mes amis et collègues de promotion,\\
+  pour tous les moments partagés.
+\end{center}
+
+%=====================================================================
+% REMERCIEMENTS
+%=====================================================================
+\newpage
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+\markboth{Remerciements}{Remerciements}
+
+Je tiens à exprimer ma profonde gratitude à toutes les personnes qui ont
+contribué à la réalisation de ce projet de fin d'études.
+
+Je remercie tout d'abord \textbf{M. SAIL Kamal}, mon encadrant à l'AIAC,
+pour sa disponibilité, ses précieux conseils et son suivi
+rigoureux tout au long de ce travail.
+
+Mes sincères remerciements vont également à \textbf{M. NOM et Prénom 3},
+mon encadrant au sein de CRCSNA Casablanca, pour m'avoir accueilli au
+sein de son équipe et guidé avec bienveillance.
+
+Je remercie aussi l'ensemble du personnel de CRCSNA Casablanca pour
+l'excellente ambiance de travail et leur aide lors de mon stage.
+
+Enfin, je remercie les membres du jury pour l'attention qu'ils porteront
+à ce rapport.
+
+%=====================================================================
+% RÉSUMÉ
+%=====================================================================
+\newpage
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\markboth{Résumé}{Résumé}
+
+\noindent\textbf{Mots-clés :} IoT, gestion d'énergie, MQTT, Raspberry Pi,
+tableau de bord, industrie 4.0, Maroc.
+
+\vspace{0.5cm}
+
+Ce rapport présente le travail réalisé dans le cadre d'un projet de fin
+d'études effectué au sein de TechSolution Maroc. L'objectif principal
+était de concevoir et développer une plateforme IoT permettant la
+surveillance et la gestion intelligente de la consommation énergétique
+dans un site industriel.
+
+La solution développée repose sur une architecture trois-tiers intégrant
+des capteurs connectés via le protocole MQTT, un serveur de traitement
+basé sur Node-RED, et une interface web de visualisation en temps réel.
+Des algorithmes de détection d'anomalies ont été intégrés pour alerter
+les opérateurs en cas de dépassement de seuils.
+
+Les résultats obtenus montrent une réduction de \textbf{18\%} de la
+consommation énergétique sur les équipements pilotes après deux mois
+d'utilisation, validant ainsi la pertinence de l'approche retenue.
+
+\vspace{0.8cm}
+
+\begin{center}\rule{6cm}{0.4pt}\end{center}
+
+\vspace{0.3cm}
+\noindent\textbf{Abstract}
+
+\vspace{0.3cm}
+\noindent\textbf{Keywords:} IoT, energy management, MQTT, Raspberry Pi,
+dashboard, Industry 4.0, Morocco.
+
+\vspace{0.3cm}
+This report presents the work carried out as part of a final-year
+engineering project at TechSolution Morocco. The main objective was to
+design and develop an IoT platform for intelligent monitoring and
+management of energy consumption at an industrial site. The results
+show an 18\% reduction in energy consumption on pilot equipment after
+two months of use.
+
+%=====================================================================
+% LISTE DES ACRONYMES
+%=====================================================================
+\newpage
+\chapter*{Liste des Acronymes}
+\addcontentsline{toc}{chapter}{Liste des Acronymes}
+\markboth{Liste des Acronymes}{Liste des Acronymes}
+
+\begin{acronym}[MQTT]
+  \acro{IoT}{Internet of Things (Internet des Objets)}
+  \acro{MQTT}{Message Queuing Telemetry Transport}
+  \acro{HTTP}{HyperText Transfer Protocol}
+  \acro{REST}{Representational State Transfer}
+  \acro{API}{Application Programming Interface}
+  \acro{BD}{Base de Données}
+  \acro{UML}{Unified Modeling Language}
+  \acro{CPU}{Central Processing Unit}
+  \acro{RAM}{Random Access Memory}
+  \acro{SSH}{Secure Shell}
+  \acro{TCP}{Transmission Control Protocol}
+  \acro{IP}{Internet Protocol}
+  \acro{GPIO}{General Purpose Input/Output}
+  \acro{PWM}{Pulse Width Modulation}
+  \acro{PFE}{Projet de Fin d'Études}
+\end{acronym}
+
+%=====================================================================
+% TABLES DES MATIÈRES / FIGURES / TABLEAUX
+%=====================================================================
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+
+%=====================================================================
+% INTRODUCTION GÉNÉRALE
+%=====================================================================
+\newpage
+\chapter*{Introduction Générale}
+\addcontentsline{toc}{chapter}{Introduction Générale}
+\markboth{Introduction Générale}{Introduction Générale}
+
+Face aux défis croissants liés à la consommation énergétique et aux
+impératifs de la transition numérique, les entreprises industrielles
+cherchent à optimiser leur gestion de l'énergie grâce aux technologies
+de l'Internet des Objets (IoT). Dans ce contexte, TechSolution Maroc
+a initié un projet visant à équiper son site de production d'une
+plateforme de supervision intelligente.
+
+Ce rapport décrit l'ensemble des travaux réalisés lors d'un stage de
+quatre mois, allant de l'analyse de l'existant jusqu'au déploiement
+de la solution finale.
+
+\textbf{Structure du rapport :}
+
+\begin{itemize}[label=\textcolor{primary}{\ding{228}}]
+  \item \textbf{Chapitre 1} — Contexte général et analyse de l'existant
+  \item \textbf{Chapitre 2} — Conception de la solution
+  \item \textbf{Chapitre 3} — Réalisation et implémentation
+  \item \textbf{Chapitre 4} — Tests, résultats et validation
+  \item \textbf{Conclusion générale} et perspectives
+\end{itemize}
+
+%=====================================================================
+% CHAPITRE 1 — CONTEXTE
+%=====================================================================
+\chapter{Contexte Général et Analyse de l'Existant}
+
+\section{Présentation de l'organisme d'accueil}
+
+\subsection{Historique et activités}
+
+TechSolution Maroc est une entreprise spécialisée dans les solutions
+technologiques pour l'industrie, fondée en 2008 à Casablanca. Elle
+emploie environ 350 personnes et dispose de trois sites de production
+répartis sur le territoire national.
+
+\begin{table}[H]
+  \centering
+  \caption{Fiche signalétique de TechSolution Maroc}
+  \label{tab:fiche_entreprise}
+  \rowcolors{2}{lightgray}{white}
+  \begin{tabularx}{0.85\textwidth}{>{\bfseries}lX}
+    \toprule
+    \rowcolor{primary!20}
+    \textbf{Critère} & \textbf{Information} \\
+    \midrule
+    Raison sociale   & TechSolution Maroc S.A. \\
+    Secteur          & Technologies industrielles \\
+    Fondation        & 2008 \\
+    Effectif         & 350 employés \\
+    Siège social     & Zone Industrielle, Casablanca \\
+    Chiffre d'affaires & 120 MDH (2023) \\
+    Certifications   & ISO 9001, ISO 50001 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Organigramme simplifié}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    node distance=1.2cm and 2cm,
+    box/.style={rectangle, rounded corners=3pt, draw=primary,
+                fill=primary!10, text width=3cm, align=center,
+                minimum height=0.9cm, font=\small},
+    topbox/.style={rectangle, rounded corners=3pt, draw=primary,
+                   fill=primary, text width=4cm, align=center,
+                   minimum height=1cm, font=\small\bfseries\color{white}},
+    arr/.style={-Stealth, primary, thick}
+  ]
+    \node[topbox] (dg) {Direction Générale};
+    \node[box, below left=of dg]  (di) {Direction Informatique};
+    \node[box, below=of dg]       (dp) {Direction Production};
+    \node[box, below right=of dg] (df) {Direction Financière};
+    \node[box, below=of di]       (dev) {Dév. \& IoT};
+    \node[box, below=of dp]       (maint) {Maintenance};
+
+    \draw[arr] (dg) -- (di);
+    \draw[arr] (dg) -- (dp);
+    \draw[arr] (dg) -- (df);
+    \draw[arr] (di) -- (dev);
+    \draw[arr] (dp) -- (maint);
+  \end{tikzpicture}
+  \caption{Organigramme simplifié de TechSolution Maroc}
+  \label{fig:organigramme}
+\end{figure}
+
+\section{Problématique et objectifs}
+
+\subsection{État de l'art}
+
+La gestion énergétique industrielle a considérablement évolué ces
+dernières années. Selon l'Agence Internationale de l'Énergie (\textit{IEA}),
+les bâtiments et industries représentent plus de 60\% de la consommation
+mondiale d'électricité. L'émergence de l'\ac{IoT} ouvre de nouvelles
+perspectives pour un pilotage fin et en temps réel de cette consommation
+\cite{ref1}.
+
+\subsection{Problèmes identifiés}
+
+L'audit de l'existant a permis d'identifier les problèmes suivants :
+
+\begin{itemize}[label=\textcolor{secondary}{\ding{72}}]
+  \item Absence de supervision en temps réel de la consommation
+  \item Relevés manuels mensuels peu fiables et coûteux
+  \item Impossibilité de détecter les gaspillages en temps opportun
+  \item Absence d'historique exploitable pour l'analyse
+\end{itemize}
+
+\subsection{Objectifs du projet}
+
+\begin{remarque}
+\textbf{Objectif principal :} Développer une plateforme IoT permettant
+la collecte, le traitement et la visualisation en temps réel des données
+de consommation énergétique, avec un système d'alertes automatiques.
+\end{remarque}
+
+Les objectifs secondaires sont :
+\begin{enumerate}[label=\textcolor{primary}{\arabic*.}]
+  \item Mettre en place une infrastructure de capteurs dans l'atelier pilote
+  \item Concevoir un tableau de bord interactif accessible via navigateur
+  \item Implémenter des règles de détection d'anomalies
+  \item Documenter l'architecture pour faciliter l'extension future
+\end{enumerate}
+
+%=====================================================================
+% CHAPITRE 2 — CONCEPTION
+%=====================================================================
+\chapter{Conception de la Solution}
+
+\section{Architecture générale}
+
+La solution retenue suit une architecture trois-tiers classique adaptée
+aux contraintes IoT, comme illustré dans la figure~\ref{fig:architecture}.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    layer/.style={rectangle, draw=primary, fill=primary!8,
+                  minimum width=10cm, minimum height=1.4cm,
+                  align=center, font=\bfseries\small},
+    lbl/.style={font=\scriptsize\color{darkgray}},
+    arr/.style={Stealth-Stealth, primary, thick}
+  ]
+    \node[layer] (couche3) at (0,0) {
+      \textcolor{primary}{Couche Présentation} —
+      Dashboard Web (React.js + Chart.js)
+    };
+    \node[layer] (couche2) at (0,-2.2) {
+      \textcolor{primary}{Couche Traitement} —
+      Broker MQTT (Mosquitto) + Node-RED + InfluxDB
+    };
+    \node[layer] (couche1) at (0,-4.4) {
+      \textcolor{primary}{Couche Perception} —
+      Capteurs (courant, température) + Raspberry Pi
+    };
+
+    \draw[arr] (couche1) -- (couche2)
+      node[midway, right=2mm, lbl] {\ac{MQTT} / \ac{TCP}/\ac{IP}};
+    \draw[arr] (couche2) -- (couche3)
+      node[midway, right=2mm, lbl] {\ac{REST} \ac{API} / WebSocket};
+  \end{tikzpicture}
+  \caption{Architecture trois-tiers de la plateforme IoT}
+  \label{fig:architecture}
+\end{figure}
+
+\section{Modélisation UML}
+
+\subsection{Diagramme de cas d'utilisation}
+
+Les acteurs identifiés sont l'Opérateur, l'Administrateur et le Système
+de capteurs (acteur externe). Le tableau~\ref{tab:uc} résume les
+principaux cas d'utilisation.
+
+\begin{table}[H]
+  \centering
+  \caption{Principaux cas d'utilisation}
+  \label{tab:uc}
+  \begin{tabularx}{0.9\textwidth}{clXl}
+    \toprule
+    \textbf{ID} & \textbf{Cas d'utilisation} & \textbf{Description} & \textbf{Acteur} \\
+    \midrule
+    UC01 & Visualiser tableau de bord & Consultation temps réel     & Opérateur \\
+    UC02 & Recevoir une alerte        & Notification en cas d'anomalie & Opérateur \\
+    UC03 & Générer un rapport         & Export PDF/CSV des données  & Opérateur \\
+    UC04 & Configurer les seuils      & Paramétrage des alertes     & Admin \\
+    UC05 & Gérer les utilisateurs     & CRUD utilisateurs           & Admin \\
+    UC06 & Publier des mesures        & Envoi données via MQTT      & Capteur \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Diagramme de séquence — Publication d'une mesure}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    actor/.style={rectangle, draw=primary, fill=primary!10,
+                  minimum width=2.2cm, minimum height=0.6cm,
+                  align=center, font=\small\bfseries},
+    msg/.style={-Stealth, darkgray, thick},
+    ret/.style={-Stealth, darkgray, dashed},
+    lifeline/.style={darkgray, dashed}
+  ]
+    % Acteurs
+    \node[actor] (capteur)  at (0,0)    {Capteur};
+    \node[actor] (broker)   at (3.5,0)  {Broker MQTT};
+    \node[actor] (nodered)  at (7,0)    {Node-RED};
+    \node[actor] (db)       at (10.5,0) {InfluxDB};
+
+    % Lignes de vie
+    \foreach \x in {0, 3.5, 7, 10.5}
+      \draw[lifeline] (\x,-0.3) -- (\x,-5);
+
+    % Messages
+    \draw[msg] (0,-0.8) -- node[above,font=\scriptsize]{PUBLISH /energie/salle1} (3.5,-0.8);
+    \draw[msg] (3.5,-1.4) -- node[above,font=\scriptsize]{Forward message} (7,-1.4);
+    \draw[msg] (7,-2.0) -- node[above,font=\scriptsize]{Write(timestamp, valeur)} (10.5,-2.0);
+    \draw[ret] (10.5,-2.6) -- node[above,font=\scriptsize]{OK} (7,-2.6);
+    \draw[msg] (7,-3.2) -- node[above,font=\scriptsize]{Vérifier seuil} (7,-3.2);
+    \draw[msg] (7,-3.8) -- node[above,font=\scriptsize]{Alerte si dépassement} (3.5,-3.8);
+    \draw[msg] (3.5,-4.4) -- node[above,font=\scriptsize]{PUBLISH /alertes} (0,-4.4);
+  \end{tikzpicture}
+  \caption{Diagramme de séquence — publication d'une mesure}
+  \label{fig:sequence}
+\end{figure}
+
+\section{Choix technologiques}
+
+\begin{table}[H]
+  \centering
+  \caption{Comparatif des protocoles de communication IoT}
+  \label{tab:protocoles}
+  \rowcolors{2}{lightgray}{white}
+  \begin{tabularx}{\textwidth}{lXXXX}
+    \toprule
+    \rowcolor{primary!20}
+    \textbf{Protocole} & \textbf{Consommation} & \textbf{Latence} &
+    \textbf{Sécurité} & \textbf{Retenu} \\
+    \midrule
+    MQTT   & Très faible & Très faible & TLS/SSL & \textcolor{codegreen}{\ding{52}} \\
+    HTTP   & Élevée      & Élevée      & HTTPS   & \textcolor{secondary}{\ding{56}} \\
+    CoAP   & Faible      & Faible      & DTLS    & \textcolor{secondary}{\ding{56}} \\
+    AMQP   & Moyenne     & Moyenne     & TLS     & \textcolor{secondary}{\ding{56}} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+%=====================================================================
+% CHAPITRE 3 — RÉALISATION
+%=====================================================================
+\chapter{Réalisation et Implémentation}
+
+\section{Environnement de développement}
+
+\begin{table}[H]
+  \centering
+  \caption{Environnement matériel et logiciel}
+  \label{tab:env}
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Composant} & \textbf{Caractéristique} \\
+    \midrule
+    Micro-contrôleur  & Raspberry Pi 4 Model B (4 Go RAM) \\
+    Capteurs          & SCT-013 (courant), DHT22 (temp/humidité) \\
+    Broker MQTT       & Eclipse Mosquitto 2.0 \\
+    Traitement        & Node-RED 3.1 \\
+    Base de données   & InfluxDB 2.7 \\
+    Visualisation     & Grafana 10 + React.js 18 \\
+    OS serveur        & Ubuntu Server 22.04 LTS \\
+    Langage principal & Python 3.11, JavaScript (Node.js 20) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Implémentation de la couche perception}
+
+\subsection{Lecture du capteur de courant}
+
+Le capteur SCT-013 fournit une tension analogique proportionnelle au
+courant mesuré. La lecture se fait via le convertisseur \ac{ADC} ADS1115
+connecté au bus I\textsuperscript{2}C du Raspberry Pi.
+
+\begin{lstlisting}[language=Python, caption={Lecture du capteur SCT-013 et publication MQTT}, label={lst:capteur}]
+import paho.mqtt.client as mqtt
+import Adafruit_ADS1x15
+import time, json, math
+
+BROKER_IP   = "192.168.1.100"
+TOPIC       = "energie/salle1/courant"
+CALIBRATION = 30.0   # facteur selon le capteur
+
+adc    = Adafruit_ADS1x15.ADS1115()
+client = mqtt.Client(client_id="capteur_salle1")
+client.connect(BROKER_IP, 1883)
+
+def lire_courant_rms(nb_echantillons=1000):
+    somme = 0
+    for _ in range(nb_echantillons):
+        brut = adc.read_adc(0, gain=1)
+        tension = brut * (4.096 / 32767)
+        somme  += tension ** 2
+    return math.sqrt(somme / nb_echantillons) * CALIBRATION
+
+while True:
+    courant = lire_courant_rms()
+    payload = json.dumps({
+        "timestamp": time.time(),
+        "courant_A": round(courant, 3),
+        "puissance_W": round(courant * 220, 1)
+    })
+    client.publish(TOPIC, payload)
+    print(f"[MQTT] Publié : {payload}")
+    time.sleep(5)
+\end{lstlisting}
+
+\section{Tableau de bord — captures d'écran}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    % Simulation d'un screenshot de dashboard
+    \draw[primary, thick, rounded corners=5pt]
+      (0,0) rectangle (12,6);
+    \fill[primary!8] (0,0) rectangle (12,6);
+
+    % Barre de navigation
+    \fill[primary] (0,5.3) rectangle (12,6);
+    \node[white, font=\bfseries\small] at (6,5.65)
+      {Tableau de Bord — Consommation Énergétique};
+
+    % Carte 1
+    \draw[primary, rounded corners=3pt, fill=white]
+      (0.3,3.5) rectangle (3.7,5.1);
+    \node[primary, font=\bfseries\scriptsize] at (2,4.9){Puissance Actuelle};
+    \node[primary, font=\Huge\bfseries] at (2,4.2){42.3};
+    \node[darkgray, font=\scriptsize] at (2,3.7){kW};
+
+    % Carte 2
+    \draw[primary, rounded corners=3pt, fill=white]
+      (4.0,3.5) rectangle (7.4,5.1);
+    \node[primary, font=\bfseries\scriptsize] at (5.7,4.9){Énergie aujourd'hui};
+    \node[primary, font=\Huge\bfseries] at (5.7,4.2){318};
+    \node[darkgray, font=\scriptsize] at (5.7,3.7){kWh};
+
+    % Carte 3
+    \draw[primary, rounded corners=3pt, fill=white]
+      (7.7,3.5) rectangle (11.1,5.1);
+    \node[primary, font=\bfseries\scriptsize] at (9.4,4.9){Économies (mois)};
+    \node[codegreen, font=\Huge\bfseries] at (9.4,4.2){18\%};
+    \node[darkgray, font=\scriptsize] at (9.4,3.7){vs mois précédent};
+
+    % Graphique fictif
+    \draw[primary, rounded corners=3pt, fill=white]
+      (0.3,0.3) rectangle (11.7,3.3);
+    \node[primary, font=\bfseries\scriptsize] at (6,3.05){Évolution de la consommation (7 derniers jours)};
+
+    % Courbe fictive
+    \draw[secondary, thick]
+      (1,1) -- (2,1.8) -- (3,1.4) -- (4,2.5) -- (5,2.0)
+              -- (6,2.8) -- (7,1.6) -- (8,2.3) -- (9,1.9)
+              -- (10,2.6) -- (11,2.1);
+    \draw[primary!40, dashed]
+      (1,2) -- (11,2) node[right, font=\scriptsize]{seuil};
+  \end{tikzpicture}
+  \caption{Maquette du tableau de bord de supervision}
+  \label{fig:dashboard}
+\end{figure}
+
+%=====================================================================
+% CHAPITRE 4 — TESTS ET RÉSULTATS
+%=====================================================================
+\chapter{Tests, Résultats et Validation}
+
+\section{Plan de tests}
+
+Les tests ont été conduits selon trois niveaux : tests unitaires,
+tests d'intégration et tests de performance (charge).
+
+\begin{table}[H]
+  \centering
+  \caption{Résumé du plan de tests}
+  \label{tab:tests}
+  \rowcolors{2}{lightgray}{white}
+  \begin{tabularx}{\textwidth}{lXcc}
+    \toprule
+    \rowcolor{primary!20}
+    \textbf{Type} & \textbf{Composant testé} & \textbf{Nbre tests} & \textbf{Taux réussite} \\
+    \midrule
+    Unitaire     & Lecture capteurs           & 45 & 97,8\% \\
+    Unitaire     & Publication MQTT           & 30 & 100\%  \\
+    Intégration  & Capteur → Broker → BD      & 20 & 95,0\% \\
+    Intégration  & BD → Dashboard             & 15 & 100\%  \\
+    Performance  & 100 capteurs simultanés    & 10 & 90,0\% \\
+    Charge       & 1000 messages/sec          &  5 & 80,0\% \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\section{Résultats obtenus}
+
+\subsection{Courbe de consommation}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=12cm, height=6cm,
+      xlabel={Semaine},
+      ylabel={Consommation (kWh)},
+      xtick={1,2,3,4,5,6,7,8},
+      xticklabels={S1,S2,S3,S4,S5,S6,S7,S8},
+      grid=major,
+      grid style={dashed, gray!30},
+      legend pos=north east,
+      legend style={font=\small},
+      axis lines=left,
+      ymin=1500, ymax=2500,
+      title={Évolution de la consommation avant/après déploiement},
+      title style={color=primary}
+    ]
+      \addplot[primary, thick, mark=*]
+        coordinates {(1,2200)(2,2180)(3,2250)(4,2300)(5,2050)(6,1900)(7,1850)(8,1820)};
+      \addlegendentry{Consommation réelle}
+
+      \addplot[secondary, dashed, thick]
+        coordinates {(1,2200)(2,2200)(3,2200)(4,2200)(5,2200)(6,2200)(7,2200)(8,2200)};
+      \addlegendentry{Référence (avant déploiement)}
+
+      % Ligne de déploiement
+      \draw[secondary, dashed] (axis cs:4,1500) -- (axis cs:4,2500)
+        node[above, font=\tiny]{Déploiement};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Évolution hebdomadaire de la consommation (kWh)}
+  \label{fig:courbe_conso}
+\end{figure}
+
+\subsection{Latence du système}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      ybar,
+      width=10cm, height=5cm,
+      bar width=1cm,
+      xlabel={Composant},
+      ylabel={Latence moyenne (ms)},
+      symbolic x coords={Capteur→Broker, Broker→Node-RED, Node-RED→DB, DB→Dashboard},
+      xtick=data,
+      x tick label style={rotate=25, anchor=east, font=\small},
+      nodes near coords,
+      nodes near coords align={vertical},
+      grid=major,
+      grid style={dashed, gray!30},
+      axis lines=left,
+      title={Latences moyennes par composant},
+      title style={color=primary}
+    ]
+      \addplot[fill=primary!70] coordinates {
+        (Capteur→Broker,12)
+        (Broker→Node-RED,8)
+        (Node-RED→DB,15)
+        (DB→Dashboard,45)
+      };
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Latences moyennes mesurées par composant}
+  \label{fig:latences}
+\end{figure}
+
+\section{Validation par l'entreprise}
+
+La solution a été présentée à la direction technique de TechSolution Maroc
+lors d'une réunion de validation. Les critères suivants ont été évalués :
+
+\begin{table}[H]
+  \centering
+  \caption{Grille d'évaluation de la solution}
+  \label{tab:validation}
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Critère}           & \textbf{Note /5} & \textbf{Commentaire} \\
+    \midrule
+    Facilité d'utilisation     & 4,5 & Interface intuitive \\
+    Fiabilité des données      & 4,0 & Taux de perte < 0,3\% \\
+    Performance temps réel     & 4,0 & Latence totale < 80 ms \\
+    Scalabilité                & 3,5 & À améliorer pour 500+ capteurs \\
+    Documentation              & 5,0 & Complète et claire \\
+    \midrule
+    \textbf{Moyenne}           & \textbf{4,2} & \textbf{Validé} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%=====================================================================
+% CONCLUSION GÉNÉRALE
+%=====================================================================
+\chapter*{Conclusion Générale et Perspectives}
+\addcontentsline{toc}{chapter}{Conclusion Générale et Perspectives}
+\markboth{Conclusion Générale}{Conclusion Générale}
+
+\section*{Bilan du projet}
+
+Ce projet de fin d'études nous a permis de concevoir et de déployer
+avec succès une plateforme IoT de gestion énergétique. Les principaux
+objectifs ont été atteints :
+
+\begin{itemize}[label=\textcolor{codegreen}{\ding{52}}]
+  \item Infrastructure de capteurs opérationnelle sur l'atelier pilote
+  \item Tableau de bord fonctionnel avec alertes en temps réel
+  \item Réduction de 18\% de la consommation sur deux mois
+  \item Documentation complète remise à l'entreprise
+\end{itemize}
+
+\section*{Difficultés rencontrées}
+
+Les principales difficultés ont porté sur la calibration des capteurs
+de courant et sur la gestion des pannes réseau dans un environnement
+industriel avec de nombreuses interférences électromagnétiques.
+
+\section*{Perspectives}
+
+Plusieurs améliorations sont envisageables pour la suite :
+\begin{enumerate}[label=\textcolor{primary}{\arabic*.}]
+  \item Intégration d'un modèle de prévision par \textit{Machine Learning}
+  \item Extension à l'ensemble des ateliers du site (500+ capteurs)
+  \item Développement d'une application mobile de supervision
+  \item Interconnexion avec le système ERP de l'entreprise
+\end{enumerate}
+
+%=====================================================================
+% BIBLIOGRAPHIE
+%=====================================================================
+\begin{thebibliography}{99}
+  \bibitem{ref1}
+    Atzori, L., Iera, A., \& Morabito, G. (2010).
+    \textit{The Internet of Things: A survey}.
+    Computer Networks, 54(15), 2787--2805.
+
+  \bibitem{ref2}
+    Guinard, D., \& Trifa, V. (2016).
+    \textit{Building the Web of Things}.
+    Manning Publications.
+
+  \bibitem{ref3}
+    OASIS Standard. (2019).
+    \textit{MQTT Version 5.0}.
+    \url{https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html}
+
+  \bibitem{ref4}
+    Agence Marocaine pour l'Efficacité Énergétique (AMEE). (2023).
+    \textit{Rapport annuel sur la consommation énergétique industrielle}.
+    Rabat, Maroc.
+
+  \bibitem{ref5}
+    Raspberry Pi Foundation. (2023).
+    \textit{Raspberry Pi 4 Technical Datasheet}.
+    \url{https://www.raspberrypi.com}
+\end{thebibliography}
+
+%=====================================================================
+% ANNEXES
+%=====================================================================
+\appendix
+\renewcommand{\thechapter}{\Alph{chapter}}
+
+\chapter{Schéma de câblage des capteurs}
+\label{ann:cablage}
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    comp/.style={rectangle, draw=primary, fill=primary!10,
+                 minimum width=2.5cm, minimum height=1cm, align=center, font=\small},
+    wire/.style={primary, thick}
+  ]
+    \node[comp] (rpi)  at (0,0)    {Raspberry Pi 4};
+    \node[comp] (ads)  at (5,1.5)  {ADS1115\\(ADC)};
+    \node[comp] (sct)  at (9,1.5)  {SCT-013\\(Capteur I)};
+    \node[comp] (dht)  at (5,-1.5) {DHT22\\(Temp/Hum)};
+
+    \draw[wire] (rpi.east) -- ++(1,0) |- (ads.west)
+      node[midway, above, font=\scriptsize]{I2C};
+    \draw[wire] (rpi.east) -- ++(1,0) |- (dht.west)
+      node[midway, below, font=\scriptsize]{GPIO 4};
+    \draw[wire] (ads.east) -- (sct.west)
+      node[midway, above, font=\scriptsize]{AIN0};
+
+    % Alimentation
+    \draw[secondary, dashed] (rpi.north) -- ++(0,0.5)
+      node[above, font=\scriptsize]{5V USB-C};
+  \end{tikzpicture}
+  \caption{Schéma simplifié de câblage}
+  \label{fig:cablage}
+\end{figure}
+
+\chapter{Manuel d'installation}
+\label{ann:install}
+
+\section*{Prérequis}
+
+\begin{itemize}
+  \item Raspberry Pi OS Lite (64-bit) installé sur carte microSD
+  \item Connexion réseau filaire (RJ45)
+  \item Accès \ac{SSH} activé
+\end{itemize}
+
+\section*{Étapes d'installation}
+
+\begin{lstlisting}[language=bash,
+  caption={Script d'installation automatique},
+  label={lst:install}]
+#!/bin/bash
+# 1. Mise a jour du systeme
+sudo apt-get update && sudo apt-get upgrade -y
+
+# 2. Installation de Mosquitto (broker MQTT)
+sudo apt-get install -y mosquitto mosquitto-clients
+sudo systemctl enable mosquitto
+
+# 3. Installation de Python et dependances
+pip3 install paho-mqtt Adafruit-ADS1x15 influxdb-client
+
+# 4. Installation de Node-RED
+bash <(curl -sL https://raw.githubusercontent.com/\
+node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+# 5. Demarrage des services
+sudo systemctl start mosquitto
+sudo systemctl start nodered
+echo "Installation terminee !"
+\end{lstlisting}
+
+\chapter{Glossaire Technique}
+\label{ann:glossaire}
+
+\begin{description}[style=nextline]
+  \item[\textbf{Broker MQTT}]
+    Serveur central qui reçoit les messages publiés par les clients
+    et les redistribue aux abonnés concernés.
+  \item[\textbf{Node-RED}]
+    Outil de programmation visuelle orienté flux, développé par IBM,
+    permettant de connecter des services et des équipements IoT.
+  \item[\textbf{InfluxDB}]
+    Base de données orientée séries temporelles, optimisée pour
+    le stockage et l'interrogation de données horodatées.
+  \item[\textbf{Grafana}]
+    Plateforme open-source de visualisation de données, particulièrement
+    adaptée aux séries temporelles.
+  \item[\textbf{SCT-013}]
+    Transformateur de courant non invasif permettant la mesure du
+    courant alternatif sans couper le circuit.
+\end{description}
+
+\end{document}

@@ -1,0 +1,36 @@
+\babel@toc {french}{}\relax 
+\xpg@aux {}{french}
+\xpg@aux {}{french}
+\contentsline {chapter}{Remerciements}{2}{chapter*.1}%
+\contentsline {chapter}{Résumé}{3}{chapter*.2}%
+\contentsline {chapter}{Liste des Acronymes}{4}{chapter*.3}%
+\contentsline {chapter}{Introduction Générale}{8}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Contexte Général et Analyse de l'Existant}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Présentation de l'organisme d'accueil}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Historique et activités}{9}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Organigramme simplifié}{10}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Problématique et objectifs}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}État de l'art}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Problèmes identifiés}{10}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Objectifs du projet}{10}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Conception de la Solution}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Architecture générale}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Modélisation UML}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Diagramme de cas d'utilisation}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Diagramme de séquence — Publication d'une mesure}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Choix technologiques}{13}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Réalisation et Implémentation}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Environnement de développement}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Implémentation de la couche perception}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Lecture du capteur de courant}{14}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Tableau de bord — captures d'écran}{15}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Tests, Résultats et Validation}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Plan de tests}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Résultats obtenus}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Courbe de consommation}{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Latence du système}{17}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Validation par l'entreprise}{17}{section.4.3}%
+\contentsline {chapter}{Conclusion Générale et Perspectives}{18}{chapter*.24}%
+\contentsline {chapter}{\numberline {A}Schéma de câblage des capteurs}{20}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Manuel d'installation}{21}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Glossaire Technique}{22}{appendix.C}%
