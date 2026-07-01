@@ -15,7 +15,7 @@
 %---------------------------------------------------------------------
 \usepackage[
   top=2.5cm, bottom=2.5cm,
-  left=3cm,  right=2.5cm,
+  left=2.5cm,  right=2.5cm,
   headheight=15pt
 ]{geometry}
 
@@ -150,13 +150,11 @@
   angle   = 0,
   opacity = 1,
   contents = {
-    \begin{tikzpicture}   % no remember picture, no overlay
+    \begin{tikzpicture}[remember picture, overlay]
       \draw[color=primary, line width=1.2pt]
-        ({-\dimexpr\paperwidth/2  - 1.4cm\relax},
-         {-\dimexpr\paperheight/2 - 1.2cm\relax})
+        ($(current page.south west) + (2cm, 2cm)$)
         rectangle
-        ({\dimexpr\paperwidth/2  - 1.4cm\relax},
-         {\dimexpr\paperheight/2 - 1.2cm\relax});
+        ($(current page.north east) - (2cm, 2cm)$);
     \end{tikzpicture}
   }
 }
