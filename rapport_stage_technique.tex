@@ -144,6 +144,23 @@
   innerleftmargin=10pt
 ]{remarque}
 
+\usepackage[pages=some]{background}
+\backgroundsetup{
+  scale   = 1,
+  angle   = 0,
+  opacity = 1,
+  contents = {
+    \begin{tikzpicture}   % no remember picture, no overlay
+      \draw[color=primary, line width=1.2pt]
+        ({-\dimexpr\paperwidth/2  - 1.4cm\relax},
+         {-\dimexpr\paperheight/2 - 1.2cm\relax})
+        rectangle
+        ({\dimexpr\paperwidth/2  - 1.4cm\relax},
+         {\dimexpr\paperheight/2 - 1.2cm\relax});
+    \end{tikzpicture}
+  }
+}
+
 %=====================================================================
 \begin{document}
 \onehalfspacing
@@ -153,34 +170,7 @@
 %=====================================================================
 \begin{titlepage}
 \newgeometry{top=1.2cm, bottom=1.2cm, left=1.8cm, right=1.8cm}
-  
-% \begin{tikzpicture}[remember picture, overlay]
-%   \draw[primary, line width=1.2pt, dash pattern=on 5pt off 3.5pt]
-%     ([xshift=1.4cm, yshift=-1.2cm] current page.north west)
-%     rectangle
-%     ([xshift=-1.4cm, yshift=1.2cm] current page.south east);
-% \end{tikzpicture}
 
-% \begin{tikzpicture}[remember picture, overlay]
-%   \draw[primary, line width=1.5pt]
-%     ([xshift=1.4cm, yshift=-1.2cm] current page.north west)
-%     rectangle
-%     ([xshift=-1.4cm, yshift=1.2cm] current page.south east);
-% \end{tikzpicture}
-
-\backgroundsetup{
-  scale   = 1,
-  angle   = 0,
-  opacity = 1,
-  contents = {
-    \begin{tikzpicture}[remember picture, overlay]
-      \draw[primary, line width=1.2pt]
-        ([xshift=1.4cm,  yshift=-1.2cm] current page.north west)
-        rectangle
-        ([xshift=-1.4cm, yshift=1.2cm]  current page.south east);
-    \end{tikzpicture}
-  }
-}
 \BgThispage
  
 \begin{center}

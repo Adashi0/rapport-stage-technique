@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.5.31)  31 MAY 2026 16:07
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.5.31)  31 MAY 2026 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1559,26 +1559,26 @@ or XeTeX engine
 No file rapport_stage_technique.aux.
 \openout1 = `rapport_stage_technique.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1586,57 +1586,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 148.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 148.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 148.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 148.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 148.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 148.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 148.
-LaTeX Font Info:    Redeclaring math accent \check on input line 148.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 148.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 148.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 148.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 148.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 165.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 165.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 165.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 165.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 165.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 165.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 165.
+LaTeX Font Info:    Redeclaring math accent \check on input line 165.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 165.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 165.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 165.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 165.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 148.
+(Font)              `operators' in the math version `normal' on input line 165.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 148.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 165.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 148.
+(Font)              `operators' in the math version `bold' on input line 165.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 148.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 165.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 148.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 148.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 148.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 148.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 148.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 165.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 148.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 148.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 148.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 165.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 148.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 165.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1686,7 +1686,7 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 \c@lstlisting=\count418
-Package hyperref Info: Link coloring ON on input line 148.
+Package hyperref Info: Link coloring ON on input line 165.
 \@outlinefile=\write4
 \openout4 = `rapport_stage_technique.out'.
 
@@ -1727,12 +1727,12 @@ Package hyperref Warning: Rerun to get /PageLabels entry.
 
 File: figures/logo_aiac.png Graphic file (type bmp)
 <figures/logo_aiac.png>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 194
+LaTeX Font Info:    Trying to load font information for U+msa on input line 184
 .
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 194
+LaTeX Font Info:    Trying to load font information for U+msb on input line 184
 .
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1741,44 +1741,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: figures/logo_airports_of_morocco.jpg Graphic file (type bmp)
 <figures/logo_airports_of_morocco.jpg>
 LaTeX Font Info:    Font shape `TU/Amiri(0)/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/Amiri(0)/b/n' tried instead on input line 21
+(Font)              Font shape `TU/Amiri(0)/b/n' tried instead on input line 20
 1.
 
 
 d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:227: Package xcolor Error: Undefined color `darkgrey'.
+:217: Package xcolor Error: Undefined color `darkgrey'.
 
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 {\bfseries\large\color{darkgrey}
+l.217 {\bfseries\large\color{darkgrey}
                                        Rapport de Stage Technique}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:231: Package xcolor Error: Undefined color `darkgrey'.
+:221: Package xcolor Error: Undefined color `darkgrey'.
 
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.231 {\normalsize\color{darkgrey}
+l.221 {\normalsize\color{darkgrey}
                                    Présenté par}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 d:/My Data/IESCA07_data/Stage technique -2A/Rapport/rapport_stage_technique.tex
-:235: Package xcolor Error: Undefined color `darkgrey'.
+:225: Package xcolor Error: Undefined color `darkgrey'.
 
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 {\bfseries\large\color{darkgrey}
+l.225 {\bfseries\large\color{darkgrey}
                                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1794,123 +1794,123 @@ If that doesn't work, type  X <return>  to quit.
 
 ]
 
-LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 376
+LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 366
 .
 
 
-LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 376
+LaTeX Warning: Hyper reference `acro:IoT' on page 4 undefined on input line 366
 .
 
 
-LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 37
+LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 36
 7.
 
 
-LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 37
+LaTeX Warning: Hyper reference `acro:MQTT' on page 4 undefined on input line 36
 7.
 
 
-LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 37
+LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 36
 8.
 
 
-LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 37
+LaTeX Warning: Hyper reference `acro:HTTP' on page 4 undefined on input line 36
 8.
 
 
-LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 37
+LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 36
 9.
 
 
-LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 37
+LaTeX Warning: Hyper reference `acro:REST' on page 4 undefined on input line 36
 9.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 380
+LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 370
 .
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 380
+LaTeX Warning: Hyper reference `acro:API' on page 4 undefined on input line 370
 .
 
 
-LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 381.
+LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 371.
 
 
 
-LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 381.
+LaTeX Warning: Hyper reference `acro:BD' on page 4 undefined on input line 371.
 
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 382
+LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 372
 .
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 382
+LaTeX Warning: Hyper reference `acro:UML' on page 4 undefined on input line 372
 .
 
 
-LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 383
+LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 373
 .
 
 
-LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 383
+LaTeX Warning: Hyper reference `acro:CPU' on page 4 undefined on input line 373
 .
 
 
-LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 384
+LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 374
 .
 
 
-LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 384
+LaTeX Warning: Hyper reference `acro:RAM' on page 4 undefined on input line 374
 .
 
 
-LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 385
+LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 375
 .
 
 
-LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 385
+LaTeX Warning: Hyper reference `acro:SSH' on page 4 undefined on input line 375
 .
 
 
-LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 386
+LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 376
 .
 
 
-LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 386
+LaTeX Warning: Hyper reference `acro:TCP' on page 4 undefined on input line 376
 .
 
 
-LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 387.
+LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 377.
 
 
 
-LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 387.
+LaTeX Warning: Hyper reference `acro:IP' on page 4 undefined on input line 377.
 
 
 
-LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 38
+LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 37
 8.
 
 
-LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 38
+LaTeX Warning: Hyper reference `acro:GPIO' on page 4 undefined on input line 37
 8.
 
 
-LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 389
+LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 379
 .
 
 
-LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 389
+LaTeX Warning: Hyper reference `acro:PWM' on page 4 undefined on input line 379
 .
 
 
-LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 390
+LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 380
 .
 
 
-LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 390
+LaTeX Warning: Hyper reference `acro:PFE' on page 4 undefined on input line 380
 .
 
 [4
@@ -1935,7 +1935,7 @@ No file rapport_stage_technique.lot.
 ]
 Chapitre 1.
 
-Overfull \hbox (22.64607pt too wide) in paragraph at lines 435--435
+Overfull \hbox (22.64607pt too wide) in paragraph at lines 425--425
 []|\TU/lmr/bx/n/24.88 Contexte Général et Analyse de l’Exis-[]
  []
 
@@ -1943,89 +1943,89 @@ Overfull \hbox (22.64607pt too wide) in paragraph at lines 435--435
 
 ]
 Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 505.
+although it is yet undefined on input line 495.
 
 
-Package acronym Warning: Acronym IoT is not defined on input line 505.
+Package acronym Warning: Acronym IoT is not defined on input line 495.
 
 
-Package acronym Warning: Acronym IoT is not defined on input line 505.
+Package acronym Warning: Acronym IoT is not defined on input line 495.
 
 
-LaTeX Warning: Citation `ref1' on page 10 undefined on input line 507.
+LaTeX Warning: Citation `ref1' on page 10 undefined on input line 497.
 
 [10] [11]
 Chapitre 2.
 
 LaTeX Warning: Reference `fig:architecture' on page 12 undefined on input line 
-544.
+534.
 
 Package acronym Info: Label `acro:MQTT' newly defined as it shall be overridden
 
-although it is yet undefined on input line 569.
+although it is yet undefined on input line 559.
 
-Package acronym Warning: Acronym MQTT is not defined on input line 569.
+Package acronym Warning: Acronym MQTT is not defined on input line 559.
 
 
-Package acronym Warning: Acronym MQTT is not defined on input line 569.
+Package acronym Warning: Acronym MQTT is not defined on input line 559.
 
 Package acronym Info: Label `acro:TCP' newly defined as it shall be overridden
-although it is yet undefined on input line 569.
+although it is yet undefined on input line 559.
 
-Package acronym Warning: Acronym TCP is not defined on input line 569.
+Package acronym Warning: Acronym TCP is not defined on input line 559.
 
 
-Package acronym Warning: Acronym TCP is not defined on input line 569.
+Package acronym Warning: Acronym TCP is not defined on input line 559.
 
 Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
-although it is yet undefined on input line 569.
+although it is yet undefined on input line 559.
 
-Package acronym Warning: Acronym IP is not defined on input line 569.
+Package acronym Warning: Acronym IP is not defined on input line 559.
 
 
-Package acronym Warning: Acronym IP is not defined on input line 569.
+Package acronym Warning: Acronym IP is not defined on input line 559.
 
 Package acronym Info: Label `acro:REST' newly defined as it shall be overridden
 
-although it is yet undefined on input line 571.
+although it is yet undefined on input line 561.
 
-Package acronym Warning: Acronym REST is not defined on input line 571.
+Package acronym Warning: Acronym REST is not defined on input line 561.
 
 
-Package acronym Warning: Acronym REST is not defined on input line 571.
+Package acronym Warning: Acronym REST is not defined on input line 561.
 
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 571.
+although it is yet undefined on input line 561.
 
-Package acronym Warning: Acronym API is not defined on input line 571.
-
-
-Package acronym Warning: Acronym API is not defined on input line 571.
+Package acronym Warning: Acronym API is not defined on input line 561.
 
 
-LaTeX Warning: Reference `tab:uc' on page 12 undefined on input line 582.
+Package acronym Warning: Acronym API is not defined on input line 561.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 600--600
+LaTeX Warning: Reference `tab:uc' on page 12 undefined on input line 572.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--590
 [][]|\TU/lmr/m/n/12 Export PDF/CSV des[]
  []
 
 [12
 
 ]
-Overfull \hbox (7.32457pt too wide) in paragraph at lines 656--656
+Overfull \hbox (7.32457pt too wide) in paragraph at lines 646--646
 [][]|\TU/lmr/bx/n/12 Consommation| []
  []
 
 [13]
 Chapitre 3.
 Package acronym Info: Label `acro:ADC' newly defined as it shall be overridden
-although it is yet undefined on input line 691.
+although it is yet undefined on input line 681.
 
-Package acronym Warning: Acronym ADC is not defined on input line 691.
+Package acronym Warning: Acronym ADC is not defined on input line 681.
 
 
-Package acronym Warning: Acronym ADC is not defined on input line 691.
+Package acronym Warning: Acronym ADC is not defined on input line 681.
 
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.s
@@ -2033,9 +2033,9 @@ ty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 694.
+nput line 684.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 695.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 685.
  [14
 
 ] [15]
@@ -2043,7 +2043,7 @@ Chapitre 4.
 [16
 
 ]
-Package pgfplots info on input line 870: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 860: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
  [17] [18
 
@@ -2056,12 +2056,12 @@ Annexe A.
 ]
 Annexe B.
 Package acronym Info: Label `acro:SSH' newly defined as it shall be overridden
-although it is yet undefined on input line 1017.
+although it is yet undefined on input line 1007.
 
-Package acronym Warning: Acronym SSH is not defined on input line 1017.
+Package acronym Warning: Acronym SSH is not defined on input line 1007.
 
 
-Package acronym Warning: Acronym SSH is not defined on input line 1017.
+Package acronym Warning: Acronym SSH is not defined on input line 1007.
 
 
 (C:\Users\Ben abbou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.s
@@ -2100,10 +2100,10 @@ Package rerunfilecheck Info: Checksums for `rapport_stage_technique.out':
 (rerunfilecheck)             After:  088F12C36FA5B37AF4CBAFCE6ACF14CF;6128.
  ) 
 Here is how much of TeX's memory you used:
- 44539 strings out of 402987
- 1043719 string characters out of 5447696
- 1940687 words of memory out of 5000000
- 72516 multiletter control sequences out of 15000+600000
+ 44542 strings out of 402987
+ 1043815 string characters out of 5447696
+ 1941342 words of memory out of 5000000
+ 72519 multiletter control sequences out of 15000+600000
  633664 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,17n,94p,1266b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
