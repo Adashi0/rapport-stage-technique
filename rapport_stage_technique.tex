@@ -23,7 +23,7 @@
 % COULEURS
 %---------------------------------------------------------------------
 \usepackage{xcolor}
-\definecolor{primary}{RGB}{0, 0, 128}       % Bleu
+\definecolor{primary}{RGB}{0, 0, 130}       % Bleu
 \definecolor{secondary}{RGB}{230, 57, 70}    % Rouge accent
 \definecolor{lightgray}{RGB}{245, 245, 245}
 \definecolor{darkgray}{RGB}{60, 60, 60}
@@ -40,6 +40,7 @@
 \usepackage{tikz}
 \usepackage{pdfpages}
 \usepackage{pgfplots}
+\usetikzlibrary{arrows.meta, positioning, calc}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, shadows, calc}
 
@@ -60,7 +61,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small\textcolor{primary}{\leftmark}}
-\fancyhead[R]{\small\textcolor{darkgray}{Rapport PFA — 2027}}
+\fancyhead[R]{\small\textcolor{darkgray}{Rapport PFA}}
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{\small\textcolor{darkgray}{AIAC - IESCA 07}}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -104,9 +105,9 @@
   linkcolor=primary,
   citecolor=secondary,
   urlcolor=primary,
-  pdftitle={Rapport PFE — Développement d'une Plateforme IoT},
-  pdfauthor={Yassine El Amrani},
-  pdfsubject={Projet de Fin d'Études}
+  pdftitle={Rapport PFA},
+  pdfauthor={Youssef BEN ABBOU},
+  pdfsubject={Projet de Fin d'Année}
 ]{hyperref}
 
 %---------------------------------------------------------------------
@@ -171,11 +172,19 @@
 \thispagestyle{empty}
 \vspace*{5cm}
 \begin{center}
-  \itshape\Large
-  \textcolor{primary}{À mes parents,}\\[0.5cm]
-  pour leur soutien indéfectible tout au long de ce parcours.\\[0.5cm]
-  À mes amis et collègues de promotion,\\
-  pour tous les moments partagés.
+\itshape\Large
+Je dédie ce travail, avant tout, à mes très chers parents, en témoignage de ma profonde 
+reconnaissance pour leur amour, leurs sacrifices, leur patience et leur soutien indéfectible 
+tout au long de mon parcours académique. Leur confiance, leurs encouragements et les valeurs qu'ils m'ont 
+transmises ont constitué une source constante de motivation et de persévérance.
+
+J'adresse également cette dédicace à mes amis, dont la présence, les conseils avisés et le soutien 
+moral m'ont été d'un grand réconfort durant la réalisation de ce travail.
+
+Enfin, je dédie ce rapport à toutes les personnes qui, de près ou de loin, ont contribué à ma 
+formation et m'ont encouragé à poursuivre mes objectifs. Qu'elles trouvent ici l'expression de 
+ma sincère gratitude et de mon profond respect.
+
 \end{center}
 
 %=====================================================================
@@ -185,23 +194,27 @@
 \chapter*{Remerciements}
 \addcontentsline{toc}{chapter}{Remerciements}
 \markboth{Remerciements}{Remerciements}
+Avant toute chose, je rends grâce à \textbf{Allah}, le Tout-Puissant, pour m'avoir accordé la santé, 
+la force, la patience et la persévérance nécessaires à l'accomplissement de ce travail.
 
-Je tiens à exprimer ma profonde gratitude à toutes les personnes qui ont
-contribué à la réalisation de ce projet de fin d'études.
+J'exprime ma profonde gratitude à mon encadrante professionnelle, \textbf{Mme. Safaa EL GOULITI}, 
+pour son accompagnement, sa disponibilité, ses précieux conseils et son soutien tout au long 
+de la réalisation de ce stage. Son expertise et son encadrement ont grandement contribué à la 
+réussite de ce travail.
 
-Je remercie tout d'abord \textbf{M. SAIL Kamal}, mon encadrant à l'AIAC,
-pour sa disponibilité, ses précieux conseils et son suivi
-rigoureux tout au long de ce travail.
+Mes sincères remerciements s'adressent également à \textbf{M. Kamal SAIL}, responsable de la filière, 
+ainsi qu'à \textbf{Dr. Sallami CHOUGDALI}, chef de la filière, pour leur engagement, leurs orientations et 
+les connaissances qu'ils m'ont transmises tout au long de ma formation.
 
-Mes sincères remerciements vont également à \textbf{M. NOM et Prénom 3},
-mon encadrant au sein de CRCSNA Casablanca, pour m'avoir accueilli au
-sein de son équipe et guidé avec bienveillance.
+Je tiens également à adresser mes vifs remerciements à l'ensemble du personnel ATSEP 
+du CRCSNA de Casablanca pour leur accueil chaleureux, leur disponibilité, leur 
+professionnalisme et leur précieuse collaboration durant mon stage. Les échanges 
+avec eux ont constitué une expérience particulièrement enrichissante sur les plans humain 
+et professionnel.
 
-Je remercie aussi l'ensemble du personnel de CRCSNA Casablanca pour
-l'excellente ambiance de travail et leur aide lors de mon stage.
+Enfin, je remercie toutes les personnes qui, de près ou de loin, ont contribué à la 
+réalisation de ce rapport et à la réussite de cette expérience.
 
-Enfin, je remercie les membres du jury pour l'attention qu'ils porteront
-à ce rapport.
 
 %=====================================================================
 % RÉSUMÉ
@@ -210,46 +223,59 @@ Enfin, je remercie les membres du jury pour l'attention qu'ils porteront
 \chapter*{Résumé}
 \addcontentsline{toc}{chapter}{Résumé}
 \markboth{Résumé}{Résumé}
+Dans le cadre de la formation d'Ingénieur Électronicien de la Sécurité de la Circulation Aérienne 
+(IESCA) à l'Académie Internationale Mohammed VI de l'Aviation Civile (AIAC), ce stage a été réalisé 
+au sein du Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne (CRCSNA) de Casablanca. 
+Il s'inscrit dans une démarche d'amélioration de l'exploitation et de la supervision des infrastructures 
+réseau utilisées pour les services de la navigation aérienne.
 
-\noindent\textbf{Mots-clés :} IoT, gestion d'énergie, MQTT, Raspberry Pi,
-tableau de bord, industrie 4.0, Maroc.
+L'objectif principal de ce travail est de développer une solution d'automatisation destinée aux équipements 
+Cisco IOS XE, en exploitant l'environnement **Guest Shell** et le langage **Python**. Après une étude 
+de l'architecture du réseau RINAM ainsi que des mécanismes d'automatisation offerts par Cisco IOS XE, 
+l'environnement Guest Shell a été installé et configuré sur les équipements concernés. Une connexion 
+dédiée a ensuite été mise en place afin de permettre l'exécution des scripts d'automatisation.
+
+La solution développée permet d'effectuer automatiquement des tests de connectivité vers plusieurs 
+interfaces loopback, de collecter les résultats obtenus et de les transmettre à un poste distant en 
+vue de leur consultation et de leur archivage. Les essais réalisés ont permis de valider le bon fonctionnement 
+de la solution et de mettre en évidence les avantages de l'automatisation en matière de réduction des 
+interventions manuelles, de fiabilité des opérations de supervision et de gain de temps pour les équipes 
+d'exploitation.
+
+\noindent\textbf{Mots-clés :} Cisco IOS XE, Guest Shell, Python, Automatisation réseau, 
+Supervision, RINAM, Cisco, Réseau IP, Tests de connectivité.
 
 \vspace{0.5cm}
 
-Ce rapport présente le travail réalisé dans le cadre d'un projet de fin
-d'études effectué au sein de TechSolution Maroc. L'objectif principal
-était de concevoir et développer une plateforme IoT permettant la
-surveillance et la gestion intelligente de la consommation énergétique
-dans un site industriel.
 
-La solution développée repose sur une architecture trois-tiers intégrant
-des capteurs connectés via le protocole MQTT, un serveur de traitement
-basé sur Node-RED, et une interface web de visualisation en temps réel.
-Des algorithmes de détection d'anomalies ont été intégrés pour alerter
-les opérateurs en cas de dépassement de seuils.
+%=====================================================================
+% ABSTRACT
+%=====================================================================
+\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\markboth{Abstract}{Abstract}
+As part of the Electronic Engineering for Air Traffic Safety (IESCA) program at
+ the Mohammed VI International Academy of Civil Aviation (AIAC), this internship
+  was carried out at the Regional Air Navigation Safety Control Center (CRCSNA)
+   in Casablanca. The project aims to enhance the operation and supervision of 
+   the IP network infrastructure supporting air navigation services.
 
-Les résultats obtenus montrent une réduction de \textbf{18\%} de la
-consommation énergétique sur les équipements pilotes après deux mois
-d'utilisation, validant ainsi la pertinence de l'approche retenue.
+The main objective of this work was to develop an automation solution for Cisco
+ IOS XE devices by leveraging the **Guest Shell** environment and the Python 
+ programming language. The project began with a study of the RINAM network architecture 
+ and the automation capabilities provided by Cisco IOS XE. Subsequently, the Guest 
+ Shell environment was installed and configured on the target devices, and a 
+ dedicated physical connection was established to enable the execution of automation scripts.
 
-\vspace{0.8cm}
+The developed solution automatically performs connectivity tests to multiple 
+loopback interfaces, collects the generated results, and transmits them to a 
+remote workstation for monitoring and archival purposes. The experimental results 
+confirmed the effectiveness and reliability of the proposed solution while highlighting 
+the benefits of network automation in reducing manual intervention, improving supervision 
+reliability, and increasing operational efficiency.
 
-\begin{center}\rule{6cm}{0.4pt}\end{center}
 
-\vspace{0.3cm}
-\noindent\textbf{Abstract}
-
-\vspace{0.3cm}
-\noindent\textbf{Keywords:} IoT, energy management, MQTT, Raspberry Pi,
-dashboard, Industry 4.0, Morocco.
-
-\vspace{0.3cm}
-This report presents the work carried out as part of a final-year
-engineering project at TechSolution Morocco. The main objective was to
-design and develop an IoT platform for intelligent monitoring and
-management of energy consumption at an industrial site. The results
-show an 18\% reduction in energy consumption on pilot equipment after
-two months of use.
 
 %=====================================================================
 % LISTE DES ACRONYMES
@@ -259,22 +285,36 @@ two months of use.
 \addcontentsline{toc}{chapter}{Liste des Acronymes}
 \markboth{Liste des Acronymes}{Liste des Acronymes}
 
-\begin{acronym}[MQTT]
-  \acro{IoT}{Internet of Things (Internet des Objets)}
-  \acro{MQTT}{Message Queuing Telemetry Transport}
-  \acro{HTTP}{HyperText Transfer Protocol}
-  \acro{REST}{Representational State Transfer}
+\begin{acronym}
+  \acro{AIAC}{Académie Internationale Mohammed VI de l'Aviation Civile}
   \acro{API}{Application Programming Interface}
-  \acro{BD}{Base de Données}
-  \acro{UML}{Unified Modeling Language}
+  \acro{ATSEP}{Air Traffic Safety Electronics Personnel}
+  \acro{CLI}{Command Line Interface}
+  \acro{CRCSNA}{Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne}
   \acro{CPU}{Central Processing Unit}
-  \acro{RAM}{Random Access Memory}
+  \acro{DNS}{Domain Name System}
+  \acro{FTP}{File Transfer Protocol}
+  \acro{GUI}{Graphical User Interface}
+  \acro{HTTP}{HyperText Transfer Protocol}
+  \acro{HTTPS}{HyperText Transfer Protocol Secure}
+  \acro{ICMP}{Internet Control Message Protocol}
+  \acro{IOS}{Internetwork Operating System}
+  \acro{IOS XE}{Internetwork Operating System XE}
+  \acro{IP}{Internet Protocol}
+  \acro{LAN}{Local Area Network}
+  \acro{NTP}{Network Time Protocol}
+  \acro{ONDA}{Office National Des Aéroports}
+  \acro{OS}{Operating System}
+  \acro{OSI}{Open Systems Interconnection}
+  \acro{RINAM}{Réseau IP de la Navigation Aérienne Marocaine}
+  \acro{SCP}{Secure Copy Protocol}
   \acro{SSH}{Secure Shell}
   \acro{TCP}{Transmission Control Protocol}
-  \acro{IP}{Internet Protocol}
-  \acro{GPIO}{General Purpose Input/Output}
-  \acro{PWM}{Pulse Width Modulation}
-  \acro{PFE}{Projet de Fin d'Études}
+  \acro{UDP}{User Datagram Protocol}
+  \acro{URL}{Uniform Resource Locator}
+  \acro{VLAN}{Virtual Local Area Network}
+  \acro{VRF}{Virtual Routing and Forwarding}
+  \acro{WAN}{Wide Area Network}
 \end{acronym}
 
 %=====================================================================
@@ -295,660 +335,392 @@ two months of use.
 \addcontentsline{toc}{chapter}{Introduction Générale}
 \markboth{Introduction Générale}{Introduction Générale}
 
-Face aux défis croissants liés à la consommation énergétique et aux
-impératifs de la transition numérique, les entreprises industrielles
-cherchent à optimiser leur gestion de l'énergie grâce aux technologies
-de l'Internet des Objets (IoT). Dans ce contexte, TechSolution Maroc
-a initié un projet visant à équiper son site de production d'une
-plateforme de supervision intelligente.
+\section*{Contexte du stage}
 
-Ce rapport décrit l'ensemble des travaux réalisés lors d'un stage de
-quatre mois, allant de l'analyse de l'existant jusqu'au déploiement
-de la solution finale.
+L'évolution constante des technologies de l'information et des communications 
+a profondément transformé la gestion des infrastructures réseau. Dans le domaine 
+de la navigation aérienne, où la disponibilité, la fiabilité et la sécurité des 
+systèmes constituent des exigences fondamentales, les opérations d'exploitation 
+et de supervision des équipements réseau occupent une place essentielle. 
+Les équipements Cisco IOS XE, largement déployés dans les réseaux d'entreprise 
+et les infrastructures critiques, intègrent désormais des fonctionnalités avancées 
+d'automatisation permettant d'améliorer l'efficacité des opérations d'administration.
+
+C'est dans ce contexte que ce stage a été réalisé au sein du 
+\textbf{Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne (CRCSNA) de Casablanca}, 
+relevant de l'\textbf{Office National Des Aéroports (ONDA)}. 
+Ce projet s'inscrit dans une démarche de modernisation des méthodes 
+d'exploitation du réseau \textbf{RINAM}, en exploitant les capacités 
+offertes par l'environnement \textbf{Guest Shell} des équipements Cisco IOS XE.
+
+\section*{Problématique}
+
+Les opérations de supervision et de validation des équipements réseau sont encore 
+largement réalisées de manière manuelle. Cette approche nécessite des interventions 
+répétitives, mobilise un temps important pour les équipes d'exploitation et augmente 
+le risque d'erreurs humaines.
+
+Face à ces contraintes, les fonctionnalités d'automatisation intégrées aux plateformes 
+Cisco IOS XE offrent une opportunité de simplifier les tâches d'exploitation, 
+d'améliorer la rapidité des diagnostics et d'accroître la fiabilité des opérations de supervision. 
+La problématique de ce stage consiste ainsi à concevoir une solution capable d'automatiser 
+les tests de connectivité et la collecte des résultats directement depuis les équipements Cisco, 
+en exploitant l'environnement \textit{Guest Shell} et le langage Python.
+
+\section*{Objectifs du projet}
+
+L'objectif principal de ce projet est de développer une solution d'automatisation 
+destinée aux équipements Cisco IOS XE afin de faciliter les opérations de supervision du réseau.
+
+Plus spécifiquement, il s'agit de :
+
+\begin{itemize}
+    \item Étudier l'architecture du réseau RINAM ainsi que les fonctionnalités d'automatisation offertes par Cisco IOS XE ;
+    \item Installer et configurer l'environnement \textit{Guest Shell} sur les équipements Cisco ;
+    \item Établir une connexion dédiée permettant l'exécution des scripts Python ;
+    \item Développer un script Python réalisant automatiquement des tests de connectivité vers plusieurs interfaces \textit{Loopback} ;
+    \item Transmettre les résultats obtenus vers un poste distant afin de faciliter leur consultation et leur archivage.
+\end{itemize}
+
+\section*{Méthodologie adoptée}
+
+La démarche suivie repose sur une approche progressive comportant plusieurs étapes. 
+Dans un premier temps, une étude de l'architecture du réseau RINAM et de l'environnement 
+Cisco IOS XE a été menée afin de comprendre le fonctionnement des équipements et 
+les possibilités offertes par \textit{Guest Shell}. Ensuite, l'environnement d'exécution 
+a été installé et configuré avant le développement de la solution logicielle en Python.
+
+Une phase de validation a ensuite permis de vérifier le bon fonctionnement des 
+scripts développés, d'évaluer les performances de la solution et de s'assurer que 
+les résultats pouvaient être transmis automatiquement vers un poste distant.
+
 
 \textbf{Structure du rapport :}
+Le présent rapport est structuré en cinq chapitres.
 
 \begin{itemize}[label=\textcolor{primary}{\ding{228}}]
-  \item \textbf{Chapitre 1} — Contexte général et analyse de l'existant
-  \item \textbf{Chapitre 2} — Conception de la solution
-  \item \textbf{Chapitre 3} — Réalisation et implémentation
-  \item \textbf{Chapitre 4} — Tests, résultats et validation
-  \item \textbf{Conclusion générale} et perspectives
+  \item \textbf{Chapitre 1} — Présentation de l'organisme d'accueil et contexte du projet
+  \item \textbf{Chapitre 2} — Étude de l'existant et analyse des besoins
+  \item \textbf{Chapitre 3} — Étude des technologies utilisées
+  \item \textbf{Chapitre 4} — Conception et réalisation de la solution
+  \item \textbf{Chapitre 5} — Validation et évaluation
+  \item \textbf{Conclusion Générale} — Bilan du projet et perspectives d'amélioration
 \end{itemize}
 
 %=====================================================================
-% CHAPITRE 1 — CONTEXTE
+% CHAPITRE 1 — Présentation de l'organisme d'accueil
 %=====================================================================
-\chapter{Contexte Général et Analyse de l'Existant}
+\chapter{Présentation de l'organisme d'accueil}
+\section{Organisme d’accueil : Présentation et missions}
+\subsection{Présentation de l’ONDA}
 
-\section{Présentation de l'organisme d'accueil}
+L’office national des aéroports est un établissement public 
+à caractère industriel et commercial. Il est soumis à la tutelle 
+du ministère du Transport Aérien et de l’Économie Sociale. 
+Il a été créé en janvier 1990 par transformation de l’office 
+des aéroports de Casablanca. Cet établissement est chargé de 
+la gestion aéroportuaire et la fourniture des services de la 
+navigation aérienne au Maroc.
 
-\subsection{Historique et activités}
+\subsection{Missions de l’ONDA}
 
-TechSolution Maroc est une entreprise spécialisée dans les solutions
-technologiques pour l'industrie, fondée en 2008 à Casablanca. Elle
-emploie environ 350 personnes et dispose de trois sites de production
-répartis sur le territoire national.
+Chaque établissement réalise des missions, et comme l’ONDA n’en fait pas exception, 
+il a plusieurs responsabilités. Les missions de l’office national des aéroports se 
+résument essentiellement dans les missions suivantes :
 
-\begin{table}[H]
-  \centering
-  \caption{Fiche signalétique de TechSolution Maroc}
-  \label{tab:fiche_entreprise}
-  \rowcolors{2}{lightgray}{white}
-  \begin{tabularx}{0.85\textwidth}{>{\bfseries}lX}
-    \toprule
-    \rowcolor{primary!20}
-    \textbf{Critère} & \textbf{Information} \\
-    \midrule
-    Raison sociale   & TechSolution Maroc S.A. \\
-    Secteur          & Technologies industrielles \\
-    Fondation        & 2008 \\
-    Effectif         & 350 employés \\
-    Siège social     & Zone Industrielle, Casablanca \\
-    Chiffre d'affaires & 120 MDH (2023) \\
-    Certifications   & ISO 9001, ISO 50001 \\
-    \bottomrule
-  \end{tabularx}
-\end{table}
+\begin{itemize}
+  \item La garantie de la sécurité de la navigation aérienne au niveau des 
+  aéroports et de l’espace aérien sous juridiction nationale.
+  \item L’aménagement, l’exploitation, l’entretien et le développement 
+  des aéroports civils de l’État.
+  \item L’embarquement, le débarquement, le transit et l’acheminement 
+  à terre des voyageurs, des marchandises et du courrier transporté par 
+  air, ainsi que tout service destiné à la satisfaction des besoins des 
+  usagers et du public.
+  \item La liaison avec les organismes et les aéroports internationaux 
+  afin de répondre aux besoins du trafic aérien.
+  \item La formation des ingénieurs de l’aéronautique civile, des contrôleurs 
+  et des électroniciens de la sécurité aérienne.
+\end{itemize}
+\newpage
+\begin{itemize}
+  \item Pour mieux accomplir ses responsabilités, l’ONDA a des missions dont 
+  l’objectif est de répondre à un certain nombre d’exigences, et celles-ci sont :
+  \begin{itemize}
+    \item La garantie d’une qualité de service dans les prestations rendues 
+    aux compagnies et aux passagers, conformément aux normes internationales.
+    \item Le développement continu des ressources nécessaires pour répondre 
+    au développement technologique permanent du secteur.
+    \item Le développement du secteur pour répondre aux besoins de croissance 
+    du transport aérien.
+  \end{itemize}
+\end{itemize}
 
-\subsection{Organigramme simplifié}
-
+\subsection{Organigramme de l’ONDA}
+La figure ci-dessous présente l’organigramme de l’office national des aéroports où la
+direction générale chapeaute l’ensemble des départements, des pôles et des différentes
+directions.
 \begin{figure}[H]
   \centering
   \begin{tikzpicture}[
-    node distance=1.2cm and 2cm,
-    box/.style={rectangle, rounded corners=3pt, draw=primary,
-                fill=primary!10, text width=3cm, align=center,
-                minimum height=0.9cm, font=\small},
-    topbox/.style={rectangle, rounded corners=3pt, draw=primary,
-                   fill=primary, text width=4cm, align=center,
-                   minimum height=1cm, font=\small\bfseries\color{white}},
-    arr/.style={-Stealth, primary, thick}
-  ]
-    \node[topbox] (dg) {Direction Générale};
-    \node[box, below left=of dg]  (di) {Direction Informatique};
-    \node[box, below=of dg]       (dp) {Direction Production};
-    \node[box, below right=of dg] (df) {Direction Financière};
-    \node[box, below=of di]       (dev) {Dév. \& IoT};
-    \node[box, below=of dp]       (maint) {Maintenance};
+      every node/.style={font=\footnotesize},
+      box/.style={rectangle, rounded corners=2pt, draw=primary, thick,
+                  fill=primary!10, text width=3.1cm, align=center,
+                  minimum height=2cm, minimum width=3cm},
+      topbox/.style={rectangle, rounded corners=2pt, draw=primary, thick,
+                     fill=primary, text width=4.5cm, align=center,
+                     minimum height=1cm, font=\footnotesize\bfseries\color{white}},
+      headbox/.style={rectangle, rounded corners=2pt, draw=primary, thick,
+                       fill=primary, text width=6.6cm, align=center,
+                       minimum height=0.9cm, font=\footnotesize\bfseries\color{white}},
+      highlight/.style={draw=red, thick},
+      arr/.style={-Stealth, primary, thick}
+    ]
 
-    \draw[arr] (dg) -- (di);
-    \draw[arr] (dg) -- (dp);
-    \draw[arr] (dg) -- (df);
-    \draw[arr] (di) -- (dev);
-    \draw[arr] (dp) -- (maint);
+    % Column x-positions
+    \def\colA{0}
+    \def\colB{3.5}
+    \def\colC{7.5}
+    \def\colD{11.0}
+
+    % --- Row 0: Direction générale ---
+    \node[topbox] (dg) at ($(\colB,0)!0.5!(\colC,0)$) {Direction générale};
+
+    % --- Row 1 ---
+    \node[box] (sg)    at (\colA,-1.7) {Secrétariat \\général};
+    \node[box] (dcrp)  at (\colB,-1.7) {Département communication et relations publiques};
+    \node[box] (daii)  at (\colC,-1.7) {Département audit interne et inspection};
+    \node[box] (dcgmr) at (\colD,-1.7) {Département contrôle de gestion et management des risques};
+
+    % --- Row 2: group headers ---
+    \node[headbox] (poles)      at ($(\colA,-3.4)!0.5!(\colB,-3.4)$) {Pôles};
+    \node[headbox] (directions) at ($(\colC,-3.4)!0.5!(\colD,-3.4)$) {Directions};
+
+    % --- Row 3 ---
+    \node[box] (pmc)            at (\colA,-5.1) {Pôle marketing et commercial};
+    \node[box, highlight] (pna) at (\colB,-5.1) {Pôle \\navigation aérienne};
+    \node[box] (dch)            at (\colC,-5.1) {Direction \\capital humain};
+    \node[box] (dal)            at (\colD,-5.1) {Direction des achats et de la logistique};
+
+    % --- Row 4 ---
+    \node[box] (pea)   at (\colA,-7.2) {Pôle exploitation aéroportuaire};
+    \node[box] (ami)   at (\colB,-7.2) {Académie \\Internationale Mohammed VI de l'Aviation Civile};
+    \node[box] (dsp)   at (\colC,-7.2) {Direction \\stratégie, planification et développement durable};
+    \node[box] (dsi)   at (\colD,-7.2) {Direction systèmes d'information};
+    
+    % --- Row 5 ---
+    \node[box] (dq)    at (\colC,-9.3) {Direction qualité};
+    \node[box] (df)    at (\colD,-9.3) {Direction \\financière};
+
+    % --- Row 6 ---
+    \node[box] (di)  at (\colC,-9.3) {Direction des infrastructures};
+  
+
+    
+
   \end{tikzpicture}
-  \caption{Organigramme simplifié de TechSolution Maroc}
+  \caption{Organigramme de l'Office National Des Aéroports}
   \label{fig:organigramme}
 \end{figure}
 
-\section{Problématique et objectifs}
+\newpage
+\section{Département d’accueil}
+\subsection{Pôle de navigation aérienne : Présentation et organigramme}
+\subsubsection{Présentation du PNA}
 
-\subsection{État de l'art}
+Le pôle de navigation aérienne est une partie intégrante dans le processus de gestion du
+transport aérien. Il est chargé de fournir des services de la navigation aérienne par le biais des
+systèmes de communication, de navigation et de surveillance ainsi que des services
+d’information aéronautique aux aéronefs évoluant dans l’espace aérien marocain comme au
+niveau des aéroports nationaux. Le pôle navigation aérienne met en oeuvre toutes les mesures
+nécessaires pour garantir la sécurité et la régularité des vols.
 
-La gestion énergétique industrielle a considérablement évolué ces
-dernières années. Selon l'Agence Internationale de l'Énergie (\textit{IEA}),
-les bâtiments et industries représentent plus de 60\% de la consommation
-mondiale d'électricité. L'émergence de l'\ac{IoT} ouvre de nouvelles
-perspectives pour un pilotage fin et en temps réel de cette consommation
-\cite{ref1}.
-
-\subsection{Problèmes identifiés}
-
-L'audit de l'existant a permis d'identifier les problèmes suivants :
-
-\begin{itemize}[label=\textcolor{secondary}{\ding{72}}]
-  \item Absence de supervision en temps réel de la consommation
-  \item Relevés manuels mensuels peu fiables et coûteux
-  \item Impossibilité de détecter les gaspillages en temps opportun
-  \item Absence d'historique exploitable pour l'analyse
-\end{itemize}
-
-\subsection{Objectifs du projet}
-
-\begin{remarque}
-\textbf{Objectif principal :} Développer une plateforme IoT permettant
-la collecte, le traitement et la visualisation en temps réel des données
-de consommation énergétique, avec un système d'alertes automatiques.
-\end{remarque}
-
-Les objectifs secondaires sont :
-\begin{enumerate}[label=\textcolor{primary}{\arabic*.}]
-  \item Mettre en place une infrastructure de capteurs dans l'atelier pilote
-  \item Concevoir un tableau de bord interactif accessible via navigateur
-  \item Implémenter des règles de détection d'anomalies
-  \item Documenter l'architecture pour faciliter l'extension future
-\end{enumerate}
-
-%=====================================================================
-% CHAPITRE 2 — CONCEPTION
-%=====================================================================
-\chapter{Conception de la Solution}
-
-\section{Architecture générale}
-
-La solution retenue suit une architecture trois-tiers classique adaptée
-aux contraintes IoT, comme illustré dans la figure~\ref{fig:architecture}.
+\subsubsection{Organigramme du PNA}
+L’organigramme simplifié du pôle de navigation aérienne est présenté dans la figure ci-dessous.
 
 \begin{figure}[H]
   \centering
+  \resizebox{\textwidth}{!}{%
   \begin{tikzpicture}[
-    layer/.style={rectangle, draw=primary, fill=primary!8,
-                  minimum width=10cm, minimum height=1.4cm,
-                  align=center, font=\bfseries\small},
-    lbl/.style={font=\scriptsize\color{darkgray}},
-    arr/.style={Stealth-Stealth, primary, thick}
-  ]
-    \node[layer] (couche3) at (0,0) {
-      \textcolor{primary}{Couche Présentation} —
-      Dashboard Web (React.js + Chart.js)
-    };
-    \node[layer] (couche2) at (0,-2.2) {
-      \textcolor{primary}{Couche Traitement} —
-      Broker MQTT (Mosquitto) + Node-RED + InfluxDB
-    };
-    \node[layer] (couche1) at (0,-4.4) {
-      \textcolor{primary}{Couche Perception} —
-      Capteurs (courant, température) + Raspberry Pi
-    };
-
-    \draw[arr] (couche1) -- (couche2)
-      node[midway, right=2mm, lbl] {\ac{MQTT} / \ac{TCP}/\ac{IP}};
-    \draw[arr] (couche2) -- (couche3)
-      node[midway, right=2mm, lbl] {\ac{REST} \ac{API} / WebSocket};
-  \end{tikzpicture}
-  \caption{Architecture trois-tiers de la plateforme IoT}
-  \label{fig:architecture}
-\end{figure}
-
-\section{Modélisation UML}
-
-\subsection{Diagramme de cas d'utilisation}
-
-Les acteurs identifiés sont l'Opérateur, l'Administrateur et le Système
-de capteurs (acteur externe). Le tableau~\ref{tab:uc} résume les
-principaux cas d'utilisation.
-
-\begin{table}[H]
-  \centering
-  \caption{Principaux cas d'utilisation}
-  \label{tab:uc}
-  \begin{tabularx}{0.9\textwidth}{clXl}
-    \toprule
-    \textbf{ID} & \textbf{Cas d'utilisation} & \textbf{Description} & \textbf{Acteur} \\
-    \midrule
-    UC01 & Visualiser tableau de bord & Consultation temps réel     & Opérateur \\
-    UC02 & Recevoir une alerte        & Notification en cas d'anomalie & Opérateur \\
-    UC03 & Générer un rapport         & Export PDF/CSV des données  & Opérateur \\
-    UC04 & Configurer les seuils      & Paramétrage des alertes     & Admin \\
-    UC05 & Gérer les utilisateurs     & CRUD utilisateurs           & Admin \\
-    UC06 & Publier des mesures        & Envoi données via MQTT      & Capteur \\
-    \bottomrule
-  \end{tabularx}
-\end{table}
-
-\subsection{Diagramme de séquence — Publication d'une mesure}
-
-\begin{figure}[H]
-  \centering
-  \begin{tikzpicture}[
-    actor/.style={rectangle, draw=primary, fill=primary!10,
-                  minimum width=2.2cm, minimum height=0.6cm,
-                  align=center, font=\small\bfseries},
-    msg/.style={-Stealth, darkgray, thick},
-    ret/.style={-Stealth, darkgray, dashed},
-    lifeline/.style={darkgray, dashed}
-  ]
-    % Acteurs
-    \node[actor] (capteur)  at (0,0)    {Capteur};
-    \node[actor] (broker)   at (3.5,0)  {Broker MQTT};
-    \node[actor] (nodered)  at (7,0)    {Node-RED};
-    \node[actor] (db)       at (10.5,0) {InfluxDB};
-
-    % Lignes de vie
-    \foreach \x in {0, 3.5, 7, 10.5}
-      \draw[lifeline] (\x,-0.3) -- (\x,-5);
-
-    % Messages
-    \draw[msg] (0,-0.8) -- node[above,font=\scriptsize]{PUBLISH /energie/salle1} (3.5,-0.8);
-    \draw[msg] (3.5,-1.4) -- node[above,font=\scriptsize]{Forward message} (7,-1.4);
-    \draw[msg] (7,-2.0) -- node[above,font=\scriptsize]{Write(timestamp, valeur)} (10.5,-2.0);
-    \draw[ret] (10.5,-2.6) -- node[above,font=\scriptsize]{OK} (7,-2.6);
-    \draw[msg] (7,-3.2) -- node[above,font=\scriptsize]{Vérifier seuil} (7,-3.2);
-    \draw[msg] (7,-3.8) -- node[above,font=\scriptsize]{Alerte si dépassement} (3.5,-3.8);
-    \draw[msg] (3.5,-4.4) -- node[above,font=\scriptsize]{PUBLISH /alertes} (0,-4.4);
-  \end{tikzpicture}
-  \caption{Diagramme de séquence — publication d'une mesure}
-  \label{fig:sequence}
-\end{figure}
-
-\section{Choix technologiques}
-
-\begin{table}[H]
-  \centering
-  \caption{Comparatif des protocoles de communication IoT}
-  \label{tab:protocoles}
-  \rowcolors{2}{lightgray}{white}
-  \begin{tabularx}{\textwidth}{lXXXX}
-    \toprule
-    \rowcolor{primary!20}
-    \textbf{Protocole} & \textbf{Consommation} & \textbf{Latence} &
-    \textbf{Sécurité} & \textbf{Retenu} \\
-    \midrule
-    MQTT   & Très faible & Très faible & TLS/SSL & \textcolor{codegreen}{\ding{52}} \\
-    HTTP   & Élevée      & Élevée      & HTTPS   & \textcolor{secondary}{\ding{56}} \\
-    CoAP   & Faible      & Faible      & DTLS    & \textcolor{secondary}{\ding{56}} \\
-    AMQP   & Moyenne     & Moyenne     & TLS     & \textcolor{secondary}{\ding{56}} \\
-    \bottomrule
-  \end{tabularx}
-\end{table}
-
-%=====================================================================
-% CHAPITRE 3 — RÉALISATION
-%=====================================================================
-\chapter{Réalisation et Implémentation}
-
-\section{Environnement de développement}
-
-\begin{table}[H]
-  \centering
-  \caption{Environnement matériel et logiciel}
-  \label{tab:env}
-  \begin{tabular}{ll}
-    \toprule
-    \textbf{Composant} & \textbf{Caractéristique} \\
-    \midrule
-    Micro-contrôleur  & Raspberry Pi 4 Model B (4 Go RAM) \\
-    Capteurs          & SCT-013 (courant), DHT22 (temp/humidité) \\
-    Broker MQTT       & Eclipse Mosquitto 2.0 \\
-    Traitement        & Node-RED 3.1 \\
-    Base de données   & InfluxDB 2.7 \\
-    Visualisation     & Grafana 10 + React.js 18 \\
-    OS serveur        & Ubuntu Server 22.04 LTS \\
-    Langage principal & Python 3.11, JavaScript (Node.js 20) \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\section{Implémentation de la couche perception}
-
-\subsection{Lecture du capteur de courant}
-
-Le capteur SCT-013 fournit une tension analogique proportionnelle au
-courant mesuré. La lecture se fait via le convertisseur \ac{ADC} ADS1115
-connecté au bus I\textsuperscript{2}C du Raspberry Pi.
-
-\begin{lstlisting}[language=Python, caption={Lecture du capteur SCT-013 et publication MQTT}, label={lst:capteur}]
-import paho.mqtt.client as mqtt
-import Adafruit_ADS1x15
-import time, json, math
-
-BROKER_IP   = "192.168.1.100"
-TOPIC       = "energie/salle1/courant"
-CALIBRATION = 30.0   # facteur selon le capteur
-
-adc    = Adafruit_ADS1x15.ADS1115()
-client = mqtt.Client(client_id="capteur_salle1")
-client.connect(BROKER_IP, 1883)
-
-def lire_courant_rms(nb_echantillons=1000):
-    somme = 0
-    for _ in range(nb_echantillons):
-        brut = adc.read_adc(0, gain=1)
-        tension = brut * (4.096 / 32767)
-        somme  += tension ** 2
-    return math.sqrt(somme / nb_echantillons) * CALIBRATION
-
-while True:
-    courant = lire_courant_rms()
-    payload = json.dumps({
-        "timestamp": time.time(),
-        "courant_A": round(courant, 3),
-        "puissance_W": round(courant * 220, 1)
-    })
-    client.publish(TOPIC, payload)
-    print(f"[MQTT] Publié : {payload}")
-    time.sleep(5)
-\end{lstlisting}
-
-\section{Tableau de bord — captures d'écran}
-
-\begin{figure}[H]
-  \centering
-  \begin{tikzpicture}
-    % Simulation d'un screenshot de dashboard
-    \draw[primary, thick, rounded corners=5pt]
-      (0,0) rectangle (12,6);
-    \fill[primary!8] (0,0) rectangle (12,6);
-
-    % Barre de navigation
-    \fill[primary] (0,5.3) rectangle (12,6);
-    \node[white, font=\bfseries\small] at (6,5.65)
-      {Tableau de Bord — Consommation Énergétique};
-
-    % Carte 1
-    \draw[primary, rounded corners=3pt, fill=white]
-      (0.3,3.5) rectangle (3.7,5.1);
-    \node[primary, font=\bfseries\scriptsize] at (2,4.9){Puissance Actuelle};
-    \node[primary, font=\Huge\bfseries] at (2,4.2){42.3};
-    \node[darkgray, font=\scriptsize] at (2,3.7){kW};
-
-    % Carte 2
-    \draw[primary, rounded corners=3pt, fill=white]
-      (4.0,3.5) rectangle (7.4,5.1);
-    \node[primary, font=\bfseries\scriptsize] at (5.7,4.9){Énergie aujourd'hui};
-    \node[primary, font=\Huge\bfseries] at (5.7,4.2){318};
-    \node[darkgray, font=\scriptsize] at (5.7,3.7){kWh};
-
-    % Carte 3
-    \draw[primary, rounded corners=3pt, fill=white]
-      (7.7,3.5) rectangle (11.1,5.1);
-    \node[primary, font=\bfseries\scriptsize] at (9.4,4.9){Économies (mois)};
-    \node[codegreen, font=\Huge\bfseries] at (9.4,4.2){18\%};
-    \node[darkgray, font=\scriptsize] at (9.4,3.7){vs mois précédent};
-
-    % Graphique fictif
-    \draw[primary, rounded corners=3pt, fill=white]
-      (0.3,0.3) rectangle (11.7,3.3);
-    \node[primary, font=\bfseries\scriptsize] at (6,3.05){Évolution de la consommation (7 derniers jours)};
-
-    % Courbe fictive
-    \draw[secondary, thick]
-      (1,1) -- (2,1.8) -- (3,1.4) -- (4,2.5) -- (5,2.0)
-              -- (6,2.8) -- (7,1.6) -- (8,2.3) -- (9,1.9)
-              -- (10,2.6) -- (11,2.1);
-    \draw[primary!40, dashed]
-      (1,2) -- (11,2) node[right, font=\scriptsize]{seuil};
-  \end{tikzpicture}
-  \caption{Maquette du tableau de bord de supervision}
-  \label{fig:dashboard}
-\end{figure}
-
-%=====================================================================
-% CHAPITRE 4 — TESTS ET RÉSULTATS
-%=====================================================================
-\chapter{Tests, Résultats et Validation}
-
-\section{Plan de tests}
-
-Les tests ont été conduits selon trois niveaux : tests unitaires,
-tests d'intégration et tests de performance (charge).
-
-\begin{table}[H]
-  \centering
-  \caption{Résumé du plan de tests}
-  \label{tab:tests}
-  \rowcolors{2}{lightgray}{white}
-  \begin{tabularx}{\textwidth}{lXcc}
-    \toprule
-    \rowcolor{primary!20}
-    \textbf{Type} & \textbf{Composant testé} & \textbf{Nbre tests} & \textbf{Taux réussite} \\
-    \midrule
-    Unitaire     & Lecture capteurs           & 45 & 97,8\% \\
-    Unitaire     & Publication MQTT           & 30 & 100\%  \\
-    Intégration  & Capteur → Broker → BD      & 20 & 95,0\% \\
-    Intégration  & BD → Dashboard             & 15 & 100\%  \\
-    Performance  & 100 capteurs simultanés    & 10 & 90,0\% \\
-    Charge       & 1000 messages/sec          &  5 & 80,0\% \\
-    \bottomrule
-  \end{tabularx}
-\end{table}
-
-\section{Résultats obtenus}
-
-\subsection{Courbe de consommation}
-
-\begin{figure}[H]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-      width=12cm, height=6cm,
-      xlabel={Semaine},
-      ylabel={Consommation (kWh)},
-      xtick={1,2,3,4,5,6,7,8},
-      xticklabels={S1,S2,S3,S4,S5,S6,S7,S8},
-      grid=major,
-      grid style={dashed, gray!30},
-      legend pos=north east,
-      legend style={font=\small},
-      axis lines=left,
-      ymin=1500, ymax=2500,
-      title={Évolution de la consommation avant/après déploiement},
-      title style={color=primary}
+      every node/.style={font=\footnotesize},
+      box/.style={rectangle, rounded corners=2pt, draw=primary, thick,
+                  fill=primary!10, text width=3.1cm, align=center,
+                  minimum height=1.5cm, minimum width=3cm},
+      topbox/.style={rectangle, rounded corners=2pt, draw=primary, thick,
+                     fill=primary, text width=4.5cm, align=center,
+                     minimum height=1cm, font=\footnotesize\bfseries\color{white}},
+      headbox/.style={rectangle, rounded corners=2pt, draw=primary, thick,
+                       fill=primary, text width=3.1cm, align=center,
+                       minimum height=2cm, minimum width=3cm,
+                       font=\footnotesize\bfseries\color{white}},
+      highlight/.style={draw=red, thick},
+      arr/.style={-Stealth, primary, thick}
     ]
-      \addplot[primary, thick, mark=*]
-        coordinates {(1,2200)(2,2180)(3,2250)(4,2300)(5,2050)(6,1900)(7,1850)(8,1820)};
-      \addlegendentry{Consommation réelle}
+    % Column x-positions
+    \def\colA{0}
+    \def\colB{3.6}
+    \def\colC{7.2}
+    \def\colD{10.8}
+    \def\colE{14.4}
+    \def\colF{18}
 
-      \addplot[secondary, dashed, thick]
-        coordinates {(1,2200)(2,2200)(3,2200)(4,2200)(5,2200)(6,2200)(7,2200)(8,2200)};
-      \addlegendentry{Référence (avant déploiement)}
+    % --- Row 0: Pôle Navigation Aérienne (top) ---
+    \node[topbox] (top) at ($(\colC,0)!0.5!(\colD,0)$) {Pôle Navigation Aérienne};
 
-      % Ligne de déploiement
-      \draw[secondary, dashed] (axis cs:4,1500) -- (axis cs:4,2500)
-        node[above, font=\tiny]{Déploiement};
-    \end{axis}
-  \end{tikzpicture}
-  \caption{Évolution hebdomadaire de la consommation (kWh)}
-  \label{fig:courbe_conso}
+    % --- Row 1: division headers ---
+    \node[headbox] (qualite)          at (\colA,-2.1)               {Division Qualité, Sécurité et Performance Système};
+    \node[headbox] (support)          at (\colB,-2.1)               {Division \\Support};
+    \node[headbox] (dop)              at (\colC,-2.1)               {Direction des Opérations};
+    \node[headbox, highlight] (dtech) at (\colD,-2.1)               {Direction Technique};
+    \node[headbox] (ccr)              at (\colE,-2.1)               {Direction du CCR d'Agadir};
+    \node[headbox] (devatm)           at (\colF,-2.1)               {Division \\Evénements ATM};
+    % --- Row 2: services (left/right) + direct row (center) ---
+    \node[box] (sq)   at (\colA,-4.2) {Service \\Sécurité Qualité};
+    \node[box] (sp)   at (\colA,-6.1) {Service \\Sécurité des Pistes};
+
+    
+
+    \node[box] (res)    at (\colB,-4.2) {Service \\Ressources};
+    \node[box] (admin)  at (\colB,-6.1) {Service \\Administratif};
+
+    % --- Row 3: investigations under Div Evénements ATM ---
+    \node[box] (inv) at (\colF,-4.2) {Service \\Investigations};
+
+
+     \draw[arr] (top.south) -- ++(0,-2mm) -| (qualite.north);
+     \draw[arr] (top.south) -- ++(0,-2mm) -| (support.north);
+     \draw[arr] (top.south) -- ++(0,-2mm) -| (dop.north);
+     \draw[arr] (top.south) -- ++(0,-2mm) -| (dtech.north);
+     \draw[arr] (top.south) -- ++(0,-2mm) -| (ccr.north);
+     \draw[arr] (top.south) -- ++(0,-2mm) -| (devatm.north);
+
+    \draw[arr]  (qualite.south) -- (sq.north);
+    \draw[]  (sq.south)      -- (sp.north);
+
+    \draw[arr]  (support.south) -- (res.north);
+    \draw[]  (res.south)     -- (admin.north);
+
+    \draw[arr]  (devatm.south)  -- (inv.north);
+
+  \end{tikzpicture}%
+  }
+  \caption{Organigramme simplifié du pôle de la navigation aérienne.}
+  \label{fig:organigramme_pole_navigation}
 \end{figure}
 
-\subsection{Latence du système}
+\section{Contexte du projet}
 
-\begin{figure}[H]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-      ybar,
-      width=10cm, height=5cm,
-      bar width=1cm,
-      xlabel={Composant},
-      ylabel={Latence moyenne (ms)},
-      symbolic x coords={Capteur→Broker, Broker→Node-RED, Node-RED→DB, DB→Dashboard},
-      xtick=data,
-      x tick label style={rotate=25, anchor=east, font=\small},
-      nodes near coords,
-      nodes near coords align={vertical},
-      grid=major,
-      grid style={dashed, gray!30},
-      axis lines=left,
-      title={Latences moyennes par composant},
-      title style={color=primary}
-    ]
-      \addplot[fill=primary!70] coordinates {
-        (Capteur→Broker,12)
-        (Broker→Node-RED,8)
-        (Node-RED→DB,15)
-        (DB→Dashboard,45)
-      };
-    \end{axis}
-  \end{tikzpicture}
-  \caption{Latences moyennes mesurées par composant}
-  \label{fig:latences}
-\end{figure}
+Les infrastructures de communication constituent un élément essentiel au bon fonctionnement 
+des services de la navigation aérienne. Elles assurent l'acheminement fiable et sécurisé des 
+données nécessaires aux échanges entre les différents systèmes de contrôle, de surveillance 
+et de gestion du trafic aérien. Afin de garantir une disponibilité élevée de ces services, 
+les équipements réseau doivent faire l'objet d'une supervision continue ainsi que d'opérations 
+régulières de maintenance et de validation.
 
-\section{Validation par l'entreprise}
+Au sein du \ac{CRCSNA} de Casablanca, le réseau \ac{RINAM} repose principalement sur des équipements
+Cisco fonctionnant sous le système d'exploitation \ac{IOS XE}. Les opérations d'exploitation consistent 
+notamment à vérifier l'état des équipements, contrôler la connectivité entre les différents nœuds du réseau, 
+détecter les éventuelles anomalies et assurer le suivi de leur fonctionnement.
 
-La solution a été présentée à la direction technique de TechSolution Maroc
-lors d'une réunion de validation. Les critères suivants ont été évalués :
+Traditionnellement, une partie de ces opérations est réalisée manuellement à l'aide de commandes 
+exécutées directement sur les équipements. Bien que cette méthode permette d'effectuer les 
+vérifications nécessaires, elle demeure répétitive, chronophage et susceptible d'engendrer 
+des erreurs humaines, notamment lorsque les opérations doivent être exécutées de manière régulière 
+sur plusieurs équipements.
 
-\begin{table}[H]
-  \centering
-  \caption{Grille d'évaluation de la solution}
-  \label{tab:validation}
-  \begin{tabular}{lcc}
-    \toprule
-    \textbf{Critère}           & \textbf{Note /5} & \textbf{Commentaire} \\
-    \midrule
-    Facilité d'utilisation     & 4,5 & Interface intuitive \\
-    Fiabilité des données      & 4,0 & Taux de perte < 0,3\% \\
-    Performance temps réel     & 4,0 & Latence totale < 80 ms \\
-    Scalabilité                & 3,5 & À améliorer pour 500+ capteurs \\
-    Documentation              & 5,0 & Complète et claire \\
-    \midrule
-    \textbf{Moyenne}           & \textbf{4,2} & \textbf{Validé} \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+Avec l'évolution des technologies d'administration réseau, les plateformes Cisco IOS XE intègrent 
+désormais des fonctionnalités d'automatisation avancées, notamment l'environnement \textit{Guest Shell}. 
+Celui-ci offre un environnement Linux embarqué permettant d'exécuter des scripts Python directement 
+sur les équipements réseau, ouvrant ainsi la voie au développement de solutions capables d'automatiser 
+les tâches d'exploitation et de supervision.
 
-%=====================================================================
-% CONCLUSION GÉNÉRALE
-%=====================================================================
-\chapter*{Conclusion Générale et Perspectives}
-\addcontentsline{toc}{chapter}{Conclusion Générale et Perspectives}
-\markboth{Conclusion Générale}{Conclusion Générale}
+Dans ce contexte, ce projet de stage vise à concevoir et développer une solution d'automatisation 
+exploitant les capacités offertes par Guest Shell afin de réaliser automatiquement des tests de 
+connectivité vers plusieurs interfaces \textit{Loopback}, de collecter les résultats obtenus et 
+de les transmettre vers un poste distant pour leur consultation et leur archivage. Cette solution 
+a pour objectif d'améliorer l'efficacité des opérations d'exploitation, de réduire les interventions 
+manuelles et de renforcer la fiabilité du processus de supervision.
 
-\section*{Bilan du projet}
+\section{Problématique}
 
-Ce projet de fin d'études nous a permis de concevoir et de déployer
-avec succès une plateforme IoT de gestion énergétique. Les principaux
-objectifs ont été atteints :
+Le réseau \ac{RINAM} constitue une infrastructure critique pour les services de la navigation aérienne. 
+Son exploitation nécessite une surveillance permanente afin de garantir la disponibilité des équipements, 
+la continuité des communications et la détection rapide des anomalies pouvant affecter le bon 
+fonctionnement du réseau.
 
-\begin{itemize}[label=\textcolor{codegreen}{\ding{52}}]
-  \item Infrastructure de capteurs opérationnelle sur l'atelier pilote
-  \item Tableau de bord fonctionnel avec alertes en temps réel
-  \item Réduction de 18\% de la consommation sur deux mois
-  \item Documentation complète remise à l'entreprise
-\end{itemize}
+Dans le cadre des activités d'exploitation, les équipes techniques réalisent régulièrement des 
+opérations de vérification, telles que les tests de connectivité, le contrôle de l'état des 
+équipements ou encore la collecte d'informations de diagnostic. Ces opérations sont généralement 
+effectuées manuellement à l'aide de commandes exécutées directement sur les équipements Cisco. 
+Cette approche présente plusieurs limites : elle est chronophage, répétitive et augmente le risque 
+d'erreurs humaines, en particulier lorsque les vérifications doivent être réalisées de manière 
+fréquente sur plusieurs équipements.
 
-\section*{Difficultés rencontrées}
+Les plateformes Cisco fonctionnant sous \ac{IOS XE} offrent aujourd'hui de nouvelles possibilités 
+d'automatisation grâce à l'environnement \textit{Guest Shell}, qui permet d'exécuter des scripts 
+Python directement sur les équipements réseau. Cette fonctionnalité constitue une solution prometteuse 
+pour automatiser les tâches récurrentes d'exploitation et améliorer l'efficacité des opérations de supervision.
 
-Les principales difficultés ont porté sur la calibration des capteurs
-de courant et sur la gestion des pannes réseau dans un environnement
-industriel avec de nombreuses interférences électromagnétiques.
+Dans ce contexte, la problématique de ce projet peut être formulée comme suit :
 
-\section*{Perspectives}
+\begin{quote}
+\itshape
+Comment exploiter les capacités d'automatisation offertes par Cisco IOS XE et l'environnement 
+Guest Shell afin de développer une solution permettant d'automatiser les tests de connectivité, 
+de collecter les résultats et de les transmettre automatiquement vers un poste distant, tout en 
+améliorant la fiabilité et l'efficacité des opérations d'exploitation du réseau RINAM ?
+\end{quote}
 
-Plusieurs améliorations sont envisageables pour la suite :
-\begin{enumerate}[label=\textcolor{primary}{\arabic*.}]
-  \item Intégration d'un modèle de prévision par \textit{Machine Learning}
-  \item Extension à l'ensemble des ateliers du site (500+ capteurs)
-  \item Développement d'une application mobile de supervision
-  \item Interconnexion avec le système ERP de l'entreprise
-\end{enumerate}
 
-%=====================================================================
-% BIBLIOGRAPHIE
-%=====================================================================
-\begin{thebibliography}{99}
-  \bibitem{ref1}
-    Atzori, L., Iera, A., \& Morabito, G. (2010).
-    \textit{The Internet of Things: A survey}.
-    Computer Networks, 54(15), 2787--2805.
+\section{Cahier des charges}
 
-  \bibitem{ref2}
-    Guinard, D., \& Trifa, V. (2016).
-    \textit{Building the Web of Things}.
-    Manning Publications.
+Le cahier des charges de ce projet définit les principales exigences auxquelles la solution développée doit répondre. Il constitue le cadre de référence pour la conception et la réalisation du système d'automatisation.
 
-  \bibitem{ref3}
-    OASIS Standard. (2019).
-    \textit{MQTT Version 5.0}.
-    \url{https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html}
+L'objectif principal est de développer une solution exploitant les fonctionnalités d'automatisation offertes par les équipements Cisco fonctionnant sous \ac{IOS XE}, en particulier l'environnement \textit{Guest Shell}, afin de simplifier les opérations d'exploitation et de supervision du réseau.
 
-  \bibitem{ref4}
-    Agence Marocaine pour l'Efficacité Énergétique (AMEE). (2023).
-    \textit{Rapport annuel sur la consommation énergétique industrielle}.
-    Rabat, Maroc.
-
-  \bibitem{ref5}
-    Raspberry Pi Foundation. (2023).
-    \textit{Raspberry Pi 4 Technical Datasheet}.
-    \url{https://www.raspberrypi.com}
-\end{thebibliography}
-
-%=====================================================================
-% ANNEXES
-%=====================================================================
-\appendix
-\renewcommand{\thechapter}{\Alph{chapter}}
-
-\chapter{Schéma de câblage des capteurs}
-\label{ann:cablage}
-
-\begin{figure}[H]
-  \centering
-  \begin{tikzpicture}[
-    comp/.style={rectangle, draw=primary, fill=primary!10,
-                 minimum width=2.5cm, minimum height=1cm, align=center, font=\small},
-    wire/.style={primary, thick}
-  ]
-    \node[comp] (rpi)  at (0,0)    {Raspberry Pi 4};
-    \node[comp] (ads)  at (5,1.5)  {ADS1115\\(ADC)};
-    \node[comp] (sct)  at (9,1.5)  {SCT-013\\(Capteur I)};
-    \node[comp] (dht)  at (5,-1.5) {DHT22\\(Temp/Hum)};
-
-    \draw[wire] (rpi.east) -- ++(1,0) |- (ads.west)
-      node[midway, above, font=\scriptsize]{I2C};
-    \draw[wire] (rpi.east) -- ++(1,0) |- (dht.west)
-      node[midway, below, font=\scriptsize]{GPIO 4};
-    \draw[wire] (ads.east) -- (sct.west)
-      node[midway, above, font=\scriptsize]{AIN0};
-
-    % Alimentation
-    \draw[secondary, dashed] (rpi.north) -- ++(0,0.5)
-      node[above, font=\scriptsize]{5V USB-C};
-  \end{tikzpicture}
-  \caption{Schéma simplifié de câblage}
-  \label{fig:cablage}
-\end{figure}
-
-\chapter{Manuel d'installation}
-\label{ann:install}
-
-\section*{Prérequis}
+À cet effet, les travaux demandés sont les suivants :
 
 \begin{itemize}
-  \item Raspberry Pi OS Lite (64-bit) installé sur carte microSD
-  \item Connexion réseau filaire (RJ45)
-  \item Accès \ac{SSH} activé
+    \item Étudier l'architecture existante du réseau \ac{RINAM} afin de comprendre son 
+    organisation et son fonctionnement.
+    
+    \item Étudier l'environnement Cisco \ac{IOS XE} ainsi que les fonctionnalités 
+    d'automatisation disponibles, notamment l'environnement \textit{Guest Shell}.
+    
+    \item Installer et configurer l'environnement \textit{Guest Shell} sur les équipements Cisco concernés.
+    
+    \item Établir une connexion à \textit{Guest Shell} via un port physique dédié afin de 
+    permettre l'exécution des scripts d'automatisation.
+    
+    \item Développer un script Python capable d'effectuer automatiquement des tests de 
+    connectivité vers trois interfaces \textit{Loopback}.
+    
+    \item Collecter les résultats des tests réalisés et les transmettre vers un poste 
+    distant afin de faciliter leur consultation et leur archivage.
 \end{itemize}
 
-\section*{Étapes d'installation}
+Afin de répondre aux besoins d'exploitation, la solution développée devra satisfaire les exigences suivantes :
 
-\begin{lstlisting}[language=bash,
-  caption={Script d'installation automatique},
-  label={lst:install}]
-#!/bin/bash
-# 1. Mise a jour du systeme
-sudo apt-get update && sudo apt-get upgrade -y
+\begin{itemize}
+    \item automatiser les opérations de test sans intervention manuelle ;
+    \item garantir la fiabilité des résultats obtenus ;
+    \item faciliter la consultation et l'archivage des informations collectées ;
+    \item être simple à déployer et à utiliser sur les équipements Cisco \ac{IOS XE} ;
+    \item être évolutive afin de permettre l'ajout de nouvelles fonctionnalités d'automatisation.
+\end{itemize}
 
-# 2. Installation de Mosquitto (broker MQTT)
-sudo apt-get install -y mosquitto mosquitto-clients
-sudo systemctl enable mosquitto
 
-# 3. Installation de Python et dependances
-pip3 install paho-mqtt Adafruit-ADS1x15 influxdb-client
 
-# 4. Installation de Node-RED
-bash <(curl -sL https://raw.githubusercontent.com/\
-node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
-# 5. Demarrage des services
-sudo systemctl start mosquitto
-sudo systemctl start nodered
-echo "Installation terminee !"
-\end{lstlisting}
 
-\chapter{Glossaire Technique}
-\label{ann:glossaire}
 
-\begin{description}[style=nextline]
-  \item[\textbf{Broker MQTT}]
-    Serveur central qui reçoit les messages publiés par les clients
-    et les redistribue aux abonnés concernés.
-  \item[\textbf{Node-RED}]
-    Outil de programmation visuelle orienté flux, développé par IBM,
-    permettant de connecter des services et des équipements IoT.
-  \item[\textbf{InfluxDB}]
-    Base de données orientée séries temporelles, optimisée pour
-    le stockage et l'interrogation de données horodatées.
-  \item[\textbf{Grafana}]
-    Plateforme open-source de visualisation de données, particulièrement
-    adaptée aux séries temporelles.
-  \item[\textbf{SCT-013}]
-    Transformateur de courant non invasif permettant la mesure du
-    courant alternatif sans couper le circuit.
-\end{description}
+
+
+
+
+
+
+
+
 
 \end{document}
