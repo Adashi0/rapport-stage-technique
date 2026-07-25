@@ -174,6 +174,8 @@
 \vspace*{5cm}
 \begin{center}
 \itshape\Large
+\textcolor{primary}{Dédicaces}\\
+\vspace{1.5cm}
 Je dédie ce travail, avant tout, à mes très chers parents, en témoignage de ma profonde 
 reconnaissance pour leur amour, leurs sacrifices, leur patience et leur soutien indéfectible 
 tout au long de mon parcours académique. Leur confiance, leurs encouragements et les valeurs qu'ils m'ont 
@@ -225,14 +227,14 @@ réalisation de ce rapport et à la réussite de cette expérience.
 \addcontentsline{toc}{chapter}{Résumé}
 \markboth{Résumé}{Résumé}
 Dans le cadre de la formation d'Ingénieur Électronicien de la Sécurité de la Circulation Aérienne 
-(IESCA) à l'Académie Internationale Mohammed VI de l'Aviation Civile (AIAC), ce stage a été réalisé 
-au sein du Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne (CRCSNA) de Casablanca. 
+\ac{IESCA} à l'Académie Internationale Mohammed VI de l'Aviation Civile \ac{AIAC}, ce stage a été réalisé 
+au sein du Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne \ac{CRCSNA} de Casablanca. 
 Il s'inscrit dans une démarche d'amélioration de l'exploitation et de la supervision des infrastructures 
 réseau utilisées pour les services de la navigation aérienne.
 
 L'objectif principal de ce travail est de développer une solution d'automatisation destinée aux équipements 
-Cisco IOS XE, en exploitant l'environnement **Guest Shell** et le langage **Python**. Après une étude 
-de l'architecture du réseau RINAM ainsi que des mécanismes d'automatisation offerts par Cisco IOS XE, 
+Cisco IOS XE, en exploitant l'environnement \textit{Guest Shell} et le langage \textit{Python}. Après une étude 
+de l'architecture du réseau \ac{RINAM} ainsi que des mécanismes d'automatisation offerts par Cisco IOS XE, 
 l'environnement Guest Shell a été installé et configuré sur les équipements concernés. Une connexion 
 dédiée a ensuite été mise en place afin de permettre l'exécution des scripts d'automatisation.
 
@@ -256,14 +258,14 @@ Supervision, RINAM, Cisco, Réseau IP, Tests de connectivité.
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 \markboth{Abstract}{Abstract}
-As part of the Electronic Engineering for Air Traffic Safety (IESCA) program at
- the Mohammed VI International Academy of Civil Aviation (AIAC), this internship
-  was carried out at the Regional Air Navigation Safety Control Center (CRCSNA)
+As part of the Electronic Engineering for Air Traffic Safety \ac{IESCA} program at
+ the Mohammed VI International Academy of Civil Aviation \ac{AIAC}, this internship
+  was carried out at the Regional Air Navigation Safety Control Center \ac{CRCSNA}
    in Casablanca. The project aims to enhance the operation and supervision of 
    the IP network infrastructure supporting air navigation services.
 
 The main objective of this work was to develop an automation solution for Cisco
- IOS XE devices by leveraging the **Guest Shell** environment and the Python 
+ IOS XE devices by leveraging the Guest Shell environment and the Python 
  programming language. The project began with a study of the RINAM network architecture 
  and the automation capabilities provided by Cisco IOS XE. Subsequently, the Guest 
  Shell environment was installed and configured on the target devices, and a 
@@ -299,6 +301,7 @@ reliability, and increasing operational efficiency.
   \acro{HTTP}{HyperText Transfer Protocol}
   \acro{HTTPS}{HyperText Transfer Protocol Secure}
   \acro{ICMP}{Internet Control Message Protocol}
+  \acro{IESCA}{Ingénieur Électronicien de la Sécurité de la Circulation Aérienne}
   \acro{IOS}{Internetwork Operating System}
   \acro{IOS XE}{Internetwork Operating System XE}
   \acro{IP}{Internet Protocol}
@@ -348,8 +351,8 @@ et les infrastructures critiques, intègrent désormais des fonctionnalités ava
 d'automatisation permettant d'améliorer l'efficacité des opérations d'administration.
 
 C'est dans ce contexte que ce stage a été réalisé au sein du 
-\textbf{Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne (CRCSNA) de Casablanca}, 
-relevant de l'\textbf{Office National Des Aéroports (ONDA)}. 
+\textbf{Centre Régional de Contrôle de la Sécurité de la Navigation Aérienne \ac{CRCSNA} de Casablanca}, 
+relevant de l'\textbf{Office National Des Aéroports \ac{ONDA}}. 
 Ce projet s'inscrit dans une démarche de modernisation des méthodes 
 d'exploitation du réseau \textbf{RINAM}, en exploitant les capacités 
 offertes par l'environnement \textbf{Guest Shell} des équipements Cisco IOS XE.
@@ -386,7 +389,7 @@ Plus spécifiquement, il s'agit de :
 \section*{Méthodologie adoptée}
 
 La démarche suivie repose sur une approche progressive comportant plusieurs étapes. 
-Dans un premier temps, une étude de l'architecture du réseau RINAM et de l'environnement 
+Dans un premier temps, une étude de l'architecture du réseau \ac{RINAM} et de l'environnement 
 Cisco IOS XE a été menée afin de comprendre le fonctionnement des équipements et 
 les possibilités offertes par \textit{Guest Shell}. Ensuite, l'environnement d'exécution 
 a été installé et configuré avant le développement de la solution logicielle en Python.
@@ -408,14 +411,16 @@ Le présent rapport est structuré en cinq chapitres.
   \item \textbf{Conclusion Générale} — Bilan du projet et perspectives d'amélioration
 \end{itemize}
 
-%=====================================================================
-% CHAPITRE 1 — Présentation de l'organisme d'accueil
-%=====================================================================
-\chapter{Présentation de l'organisme d'accueil}
+%========================================================================================================
+%========================================================================================================
+% CHAPITRE 1 — Présentation de l’organisme d’accueil et contexte du projet
+%========================================================================================================
+%========================================================================================================
+\chapter{Présentation de l’organisme d’accueil \\et contexte du projet}
 \section{Organisme d’accueil : Présentation et missions}
 \subsection{Présentation de l’ONDA}
 
-L’office national des aéroports est un établissement public 
+L’Office National Des Aéroports est un établissement public 
 à caractère industriel et commercial. Il est soumis à la tutelle 
 du ministère du Transport Aérien et de l’Économie Sociale. 
 Il a été créé en janvier 1990 par transformation de l’office 
@@ -675,9 +680,13 @@ améliorant la fiabilité et l'efficacité des opérations d'exploitation du ré
 
 \section{Cahier des charges}
 
-Le cahier des charges de ce projet définit les principales exigences auxquelles la solution développée doit répondre. Il constitue le cadre de référence pour la conception et la réalisation du système d'automatisation.
+Le cahier des charges de ce projet définit les principales exigences auxquelles la solution 
+développée doit répondre. Il constitue le cadre de référence pour la conception et la réalisation 
+du système d'automatisation.
 
-L'objectif principal est de développer une solution exploitant les fonctionnalités d'automatisation offertes par les équipements Cisco fonctionnant sous \ac{IOS XE}, en particulier l'environnement \textit{Guest Shell}, afin de simplifier les opérations d'exploitation et de supervision du réseau.
+L'objectif principal est de développer une solution exploitant les fonctionnalités d'automatisation 
+offertes par les équipements Cisco fonctionnant sous \ac{IOS XE}, en particulier l'environnement 
+\textit{Guest Shell}, afin de simplifier les opérations d'exploitation et de supervision du réseau.
 
 À cet effet, les travaux demandés sont les suivants :
 
@@ -711,15 +720,15 @@ Afin de répondre aux besoins d'exploitation, la solution développée devra sat
 \end{itemize}
 
 
-\section{Planning prévisionnel des travaux}
+\section{Planning prévisionnel des tâches}
 
-Le planning prévisionnel des travaux, présenté à la figure~\ref{fig:planning_gantt}, 
+Le planning prévisionnel des tâches, présenté à la figure~\ref{fig:planning_gantt}, 
 illustre la répartition des principales activités du projet sur les six semaines de stage. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/planning_gantt.png}
-    \caption{Planning prévisionnel des travaux.}
+    \caption{Planning prévisionnel des tâches.}
     \label{fig:planning_gantt}
 \end{figure}
 
@@ -728,7 +737,7 @@ illustre la répartition des principales activités du projet sur les six semain
 Dans ce chapitre, nous avons présenté l'organisme d'accueil ainsi que le contexte dans lequel 
 s'inscrit ce projet de stage. Après une présentation de l'\ac{ONDA} et du \ac{CRCSNA}, 
 le cadre général du projet, la problématique, les objectifs poursuivis et le cahier des charges 
-ont été exposés. Le planning prévisionnel des travaux a également permis d'illustrer l'organisation 
+ont été exposés. Le planning prévisionnel des tâches a également permis d'illustrer l'organisation 
 des différentes activités qui seront menées tout au long du stage.
 
 Cette étude préliminaire met en évidence les enjeux liés à l'automatisation des opérations 
@@ -738,13 +747,105 @@ dans le chapitre suivant, consacré à l'analyse de l'existant, à l'identificat
 et à la présentation de l'architecture du réseau \ac{RINAM}.
 
 
+%========================================================================================================
+%========================================================================================================
+% CHAPITRE 2 — Étude de l’existant et analyse des besoins
+%========================================================================================================
+%========================================================================================================
+\chapter{Étude de l’existant et analyse \\des besoins}
+\section{Présentation du réseau RINAM}
+
+Le \textbf{Réseau IP de la Navigation Aérienne Marocaine \ac{RINAM}} constitue l'infrastructure 
+nationale de communication reliant les deux centres de contrôle aérien, les aéroports 
+ainsi que les principaux sites techniques de l'Office National des Aéroports. 
+Il assure le transport des données nécessaires à l'exploitation des systèmes de navigation 
+aérienne et garantit une communication fiable entre les différentes entités du réseau.
+
+Conçu pour répondre aux exigences élevées de disponibilité, de sécurité et de performance 
+imposées par les services de la navigation aérienne, le réseau RINAM s'appuie sur une architecture 
+IP moderne intégrant des équipements de niveau opérateur, notamment des routeurs et commutateurs 
+Cisco exécutant le système d'exploitation \textit{Cisco IOS XE}. Cette infrastructure permet le 
+transport des différents flux opérationnels tout en assurant une haute résilience grâce à la 
+redondance des liaisons et des équipements.
+
+Dans le cadre du présent stage, le réseau RINAM constitue le support de l'étude menée sur 
+l'automatisation des opérations d'exploitation et de supervision. La première étape du projet 
+consiste à analyser son architecture afin de comprendre l'organisation des équipements, leurs 
+modes d'interconnexion ainsi que les mécanismes de gestion mis en œuvre avant le développement 
+de la solution d'automatisation basée sur \textit{GuestShell}. 
+
+\subsection{Architecture générale du réseau RINAM}
+
+Le réseau RINAM est organisé selon une architecture distribuée reliant les deux centres 
+de contrôle régionaux, les aéroports, les sites RADAR et les antennes avancées. 
+Comme l'illustre la figure~\ref{fig:architecture_globale}, cette architecture permet d'assurer 
+l'échange sécurisé des informations nécessaires au fonctionnement des systèmes de surveillance, 
+de communication, de la messagerie aéronotique et de contrôle du trafic aérien.
+
+Les différents centres régionaux, tours de contrôle et plateformes aéroportuaires sont 
+raccordés au réseau central à travers des équipements Cisco assurant les fonctions de 
+routage et de commutation. Cette architecture permet l'échange des informations nécessaires 
+au fonctionnement des systèmes de navigation aérienne, tout en garantissant un niveau élevé 
+de disponibilité grâce à la redondance des équipements et des liaisons.
+
+Le RINAM transporte les flux de communication entre les différents systèmes opérationnels 
+de l'ONDA et constitue le support des services de supervision, de maintenance et d'administration 
+des équipements réseau. Dans le cadre du présent stage, cette infrastructure représente 
+l'environnement de déploiement de la solution d'automatisation développée pour les équipements 
+Cisco IOS XE utilisant l'environnement \textit{GuestShell}. L'étude de cette architecture permet 
+ainsi d'identifier les équipements concernés ainsi que leur positionnement dans le réseau avant 
+la mise en œuvre des scripts d'automatisation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/architecture_globale.png}
+    \caption{Architecture globale du réseau RINAM.}
+    \label{fig:architecture_globale}
+\end{figure}
+
+\subsubsection{Architecture du CRCSNA Casablanca}
+
+Le CRCSNA de Casablanca dispose d'une architecture réseau hiérarchisée reposant 
+sur plusieurs couches d'équipements Cisco, comme le montre la figure~\ref{fig:architecture_crcsna_casa}.
+
+Au cœur de l'architecture se trouvent deux commutateurs \textit{Core}, notés 
+\texttt{ACC\_CORE\_A1} et \texttt{ACC\_CORE\_B2}, fonctionnant de manière redondante 
+afin d'assurer la continuité de service. Ces équipements constituent le point central 
+d'interconnexion entre les différents segments du réseau.
+
+En amont du cœur de réseau, deux commutateurs de distribution \texttt{ACC\_L3SW\_A1} 
+\\et \texttt{ACC\_L3SW\_B2} assurent le routage entre les différents réseaux locaux ainsi 
+que la connexion vers les pare-feu \texttt{ACC\_FW\_A1} et \texttt{ACC\_FW\_B2}, 
+chargés de sécuriser les communications avec les réseaux externes.
+
+En aval, plusieurs commutateurs d'accès \texttt{ACC\_AccS\_A1}, \texttt{ACC\_AccS\_B2} 
+et \texttt{ACC\_AccS\_C3} distribuent la connectivité vers les différents équipements 
+utilisateurs et les réseaux opérationnels. Des commutateurs dédiés \texttt{ACC\_AccV\_A1}, 
+\texttt{ACC\_AccV\_B2}, \texttt{ACC\_AccV\_C3} \\et \texttt{ACC\_AccV\_D4} complètent cette 
+architecture pour répondre aux besoins de segmentation des différents services.
+
+Cette organisation hiérarchique facilite l'administration du réseau, améliore sa résilience 
+grâce à la redondance des équipements critiques et permet de limiter l'impact d'une éventuelle 
+défaillance sur le fonctionnement global du centre. Les équipements Cisco IOS XE présents dans 
+cette architecture constituent le périmètre d'étude du présent stage, sur lesquels seront déployées 
+les fonctionnalités d'automatisation basées sur \textit{GuestShell} afin de simplifier les opérations 
+de supervision et de validation de la connectivité.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/architecture_ccr_casa.png}
+    \caption{Architecture au sein du CRCSNA Casablanca.}
+    \label{fig:architecture_crcsna_casa}
+\end{figure}
 
 
 
 
 
 
-
+\subsection{Équipements Cisco déployés}
+\subsection{Organisation logique du réseau}
+\subsection{Gestion et supervision des équipements}
 
 
 \end{document}
