@@ -833,17 +833,62 @@ de supervision et de validation de la connectivité.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{figures/architecture_ccr_casa.png}
+    \includegraphics[width=0.8\textwidth]{figures/architecture_ccr_casa.png}
     \caption{Architecture au sein du CRCSNA Casablanca.}
     \label{fig:architecture_crcsna_casa}
 \end{figure}
 
-
-
-
-
-
 \subsection{Équipements Cisco déployés}
+
+Le réseau RINAM s'appuie sur une infrastructure composée de plusieurs catégories 
+d'équipements réseau assurant les fonctions de routage, de commutation, de sécurité 
+et d'interconnexion avec les systèmes de télécommunication. Les principaux équipements 
+rencontrés au sein de l'architecture sont présentés dans le tableau~\ref{tab:equipements_cisco_rinam}.
+
+\begin{table}[H]
+  \centering
+  \rowcolors{2}{lightgray}{white}
+  \begin{tabularx}{\textwidth}{lX}
+    \toprule
+    \rowcolor{primary!40}
+    \textbf{Équipement} & \textbf{Description} \\
+    \midrule
+    Routeur ASR 1006 &
+    Routeur de cœur de réseau (\textit{Aggregation Services Router}) destiné 
+    aux environnements opérateurs. Il assure le routage IP haut débit, 
+    la haute disponibilité et l'interconnexion des principaux sites du réseau RINAM. \\
+
+    Routeur ISR 3945 &
+    Routeur de services intégrés (\textit{Integrated Services Router}) assurant 
+    les fonctions de routage, de sécurité et de connectivité WAN pour les sites opérationnels. \\
+
+    Routeur ISR 4451 &
+    Routeur de nouvelle génération offrant des performances accrues, intégrant 
+    les services réseau, la sécurité et les fonctionnalités d'automatisation sous Cisco IOS XE. \\
+
+    Switch Cisco Catalyst 3850 &
+    Commutateur multicouche (Layer 2/Layer 3) utilisé pour l'agrégation et la 
+    distribution du trafic réseau. Il assure également le routage inter-VLAN et 
+    l'alimentation PoE de certains équipements. \\
+
+    Passerelles TOPEX &
+    Passerelles de télécommunication permettant l'interconnexion entre les réseaux 
+    IP et les réseaux de téléphonie ou de radiocommunication utilisés dans les services 
+    de navigation aérienne. \\
+
+    Pare-feu ASA 5545 &
+    Pare-feu Cisco ASA assurant la protection du réseau grâce au filtrage des flux, 
+    au contrôle d'accès, aux VPN et aux mécanismes de sécurité périmétrique. \\
+
+    Pare-feu FORCEPOINT 3401 &
+    Pare-feu de nouvelle génération (NGFW) assurant l'inspection approfondie des paquets, 
+    le contrôle applicatif et la protection contre les menaces avancées. \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Principaux équipements déployés au sein du réseau RINAM.}
+  \label{tab:equipements_cisco_rinam}
+\end{table}
+
 \subsection{Organisation logique du réseau}
 \subsection{Gestion et supervision des équipements}
 
