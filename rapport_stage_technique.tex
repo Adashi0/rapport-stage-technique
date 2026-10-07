@@ -23,8 +23,8 @@
 % COULEURS
 %---------------------------------------------------------------------
 \usepackage{xcolor}
-\definecolor{primary}{RGB}{0, 0, 130}       % Bleu
-\definecolor{secondary}{RGB}{230, 57, 70}    % Rouge accent
+\definecolor{primary}{RGB}{0, 0, 130}       
+\definecolor{secondary}{RGB}{0, 0, 150}    
 \definecolor{lightgray}{RGB}{245, 245, 245}
 \definecolor{darkgray}{RGB}{60, 60, 60}
 \definecolor{codegreen}{RGB}{0, 128, 0}
@@ -546,7 +546,7 @@ L’organigramme simplifié du pôle de navigation aérienne est présenté dans
 
 \begin{figure}[H]
   \centering
-  \resizebox{\textwidth}{!}{%
+  \resizebox{0.8\textwidth}{!}{%
   \begin{tikzpicture}[
       every node/.style={font=\footnotesize},
       box/.style={rectangle, rounded corners=2pt, draw=primary, thick,
@@ -556,8 +556,8 @@ L’organigramme simplifié du pôle de navigation aérienne est présenté dans
                      fill=primary, text width=4.5cm, align=center,
                      minimum height=1cm, font=\footnotesize\bfseries\color{white}},
       headbox/.style={rectangle, rounded corners=2pt, draw=primary, thick,
-                       fill=primary, text width=3.1cm, align=center,
-                       minimum height=2cm, minimum width=3cm,
+                       fill=secondary, text width=3.1cm, align=center,
+                       minimum height=1.5cm, minimum width=3cm,
                        font=\footnotesize\bfseries\color{white}},
       highlight/.style={draw=red, thick},
       arr/.style={-Stealth, primary, thick}
@@ -566,51 +566,31 @@ L’organigramme simplifié du pôle de navigation aérienne est présenté dans
     \def\colA{0}
     \def\colB{3.6}
     \def\colC{7.2}
-    \def\colD{10.8}
-    \def\colE{14.4}
-    \def\colF{18}
 
     % --- Row 0: Pôle Navigation Aérienne (top) ---
-    \node[topbox] (top) at ($(\colC,0)!0.5!(\colD,0)$) {Pôle Navigation Aérienne};
+    \node[topbox] (top) at (\colB,0) {Pôle Navigation Aérienne};
 
     % --- Row 1: division headers ---
-    \node[headbox] (qualite)          at (\colA,-2.1)               {Division Qualité, Sécurité et Performance Système};
-    \node[headbox] (support)          at (\colB,-2.1)               {Division \\Support};
-    \node[headbox] (dop)              at (\colC,-2.1)               {Direction des Opérations};
-    \node[headbox, highlight] (dtech) at (\colD,-2.1)               {Direction Technique};
-    \node[headbox] (ccr)              at (\colE,-2.1)               {Direction du CCR d'Agadir};
-    \node[headbox] (devatm)           at (\colF,-2.1)               {Division \\Evénements ATM};
+    \node[headbox] (dop)              at (\colA,-2.1)               {Direction des Opérations};
+    \node[headbox, highlight] (dtech) at (\colB,-2.1)               {Direction Technique};
+    \node[headbox] (ccr)              at (\colC,-2.1)               {Direction du CCR d'Agadir};
     % --- Row 2: services (left/right) + direct row (center) ---
-    \node[box] (sq)   at (\colA,-4.2) {Service \\Sécurité Qualité};
-    \node[box] (sp)   at (\colA,-6.1) {Service \\Sécurité des Pistes};
-
-    
-
-    \node[box] (res)    at (\colB,-4.2) {Service \\Ressources};
-    \node[box] (admin)  at (\colB,-6.1) {Service \\Administratif};
+    \node[box, highlight] (dptDepoiment) at ($(\colA,-5.0 )!0.5!(\colB,-5.0)$) {Département Déploiemet \& Maintenance des Systèmes Opérationnels};
+    \node[box] (dptCns) at ($(\colB,-5.0)!0.5!(\colC,-5.0)$) {Département Equipements CNS};
 
     % --- Row 3: investigations under Div Evénements ATM ---
-    \node[box] (inv) at (\colF,-4.2) {Service \\Investigations};
 
 
-     \draw[arr] (top.south) -- ++(0,-2mm) -| (qualite.north);
-     \draw[arr] (top.south) -- ++(0,-2mm) -| (support.north);
      \draw[arr] (top.south) -- ++(0,-2mm) -| (dop.north);
      \draw[arr] (top.south) -- ++(0,-2mm) -| (dtech.north);
      \draw[arr] (top.south) -- ++(0,-2mm) -| (ccr.north);
-     \draw[arr] (top.south) -- ++(0,-2mm) -| (devatm.north);
 
-    \draw[arr]  (qualite.south) -- (sq.north);
-    \draw[]  (sq.south)      -- (sp.north);
-
-    \draw[arr]  (support.south) -- (res.north);
-    \draw[]  (res.south)     -- (admin.north);
-
-    \draw[arr]  (devatm.south)  -- (inv.north);
+    \draw[arr]  (dtech.south) -- ++ (0,-2mm) -| (dptDepoiment.north);
+    \draw[arr]  (dtech.south) -- ++ (0,-2mm) -| (dptCns.north);
 
   \end{tikzpicture}%
   }
-  \caption{Organigramme simplifié du pôle de la navigation aérienne.}
+  \caption{Organigramme simplifié du Pôle Navigation Aérienne.}
   \label{fig:organigramme_pole_navigation}
 \end{figure}
 
@@ -892,5 +872,244 @@ rencontrés au sein de l'architecture sont présentés dans le tableau~\ref{tab:
 \subsection{Organisation logique du réseau}
 \subsection{Gestion et supervision des équipements}
 
+%========================================================================================================
+%========================================================================================================
+% CHAPITRE 3 — Étude des technologies utilisées
+%========================================================================================================
+%========================================================================================================
+\chapter{Étude des technologies utilisées}
+\section{Cisco IOS XE}
+
+Cisco IOS XE est le système d'exploitation utilisé par de nombreux équipements réseau Cisco. 
+Il fournit les fonctions nécessaires à la configuration, au fonctionnement et à la supervision des équipements. 
+Il est notamment utilisé sur différentes familles de routeurs et de commutateurs Cisco.
+
+Contrairement à l'ancienne architecture Cisco IOS, IOS XE repose sur une architecture logicielle 
+modulaire basée sur un noyau Linux. Le système sépare ainsi le fonctionnement du système d'exploitation 
+des différents processus qui assurent les fonctions réseau. Cette architecture facilite l'évolution 
+du système et l'intégration de nouvelles fonctionnalités.
+
+Cisco IOS XE intègre également des mécanismes permettant de programmer et d'automatiser certaines 
+opérations réseau. Il prend notamment en charge des interfaces programmables et des modèles de 
+données qui permettent aux applications d'interagir avec l'équipement.
+
+Dans le cadre de ce projet, cette capacité d'automatisation est particulièrement importante. 
+Elle permet d'utiliser des outils tels que Python et l'environnement Guest Shell directement 
+sur l'équipement Cisco. Le script développé peut ainsi réaliser automatiquement différentes 
+opérations de supervision, notamment les tests de connectivité et la collecte d'informations 
+sur l'état de l'équipement.
+
+La figure~\ref{fig:iosxe_architecture} présente une comparaison simplifiée entre l'ancienne 
+architecture Cisco IOS et l'architecture Cisco IOS XE.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/cisco_ios_xe_architecture.jpeg}
+    \caption{Comparaison entre l'architecture Cisco IOS et Cisco IOS XE}
+    \label{fig:iosxe_architecture}
+\end{figure}
+
+Cisco IOS XE représente une évolution de l'architecture traditionnelle de Cisco IOS. 
+La principale différence entre les deux architectures concerne la manière dont le système 
+d'exploitation et les différents processus réseau sont organisés.
+
+Dans l'architecture classique de Cisco IOS, les différentes fonctions du système sont 
+regroupées dans un même environnement logiciel. Les processus nécessaires au 
+fonctionnement de l'équipement sont exécutés directement au sein du système IOS. 
+Cette organisation est relativement simple, mais une modification ou un problème 
+affectant un processus peut avoir un impact plus important sur l'ensemble du système.
+
+Cisco IOS XE adopte une architecture plus modulaire. Le système repose sur un noyau 
+Linux et sépare le système d'exploitation des différents processus qui assurent les 
+fonctions réseau. Les composants logiciels sont ainsi exécutés comme des processus 
+indépendants dans l'environnement IOS XE.
+
+La différence entre les deux architectures peut être résumée comme suit :
+
+\begin{itemize}
+    \item \textbf{Cisco IOS classique :} les fonctions du système sont principalement 
+    regroupées dans un même environnement logiciel. L'architecture est donc moins modulaire.
+    
+    \item \textbf{Cisco IOS XE :} le système repose sur Linux et utilise une architecture modulaire. 
+    Les différents processus réseau sont séparés du noyau du système.
+\end{itemize}
+
+Cette séparation apporte plusieurs avantages. Elle facilite la gestion des différents processus, 
+permet de faire évoluer le système plus facilement et offre un environnement plus adapté à 
+l'intégration de nouvelles fonctions.
+
+Une autre différence importante pour ce projet est la possibilité d'intégrer des applications 
+et des outils d'automatisation dans l'environnement IOS XE. Cisco IOS XE permet notamment d'utiliser 
+\textit{Guest Shell}, qui fournit un environnement permettant d'exécuter des applications et des scripts, 
+notamment en Python.
+
+Ainsi, l'architecture classique de Cisco IOS est principalement centrée sur le fonctionnement 
+des fonctions réseau dans un environnement logiciel unique, tandis que Cisco IOS XE adopte une 
+architecture modulaire basée sur Linux. Cette évolution constitue un élément important pour 
+l'automatisation des opérations réseau réalisée dans le cadre de ce projet.
+
+L'utilisation de Cisco IOS XE constitue donc une base importante pour la solution proposée. 
+Elle permet de conserver les fonctions réseau classiques tout en offrant un environnement 
+adapté à l'automatisation et à l'exécution d'applications directement sur l'équipement.
+
+\section{Guest Shell}
+
+Guest Shell est un environnement Linux virtualisé intégré aux équipements fonctionnant 
+sous Cisco IOS XE. Il permet d'exécuter des applications Linux et des scripts personnalisés, 
+notamment des programmes Python destinés à l'automatisation et à la gestion des équipements 
+réseau.
+
+Guest Shell fonctionne sous la forme d'un conteneur géré par l'infrastructure Cisco IOx. 
+Il partage le noyau avec le système hôte, tout en restant séparé du système de fichiers 
+et des processus de l'équipement. Cette séparation permet d'exécuter des applications 
+dans un environnement contrôlé sans leur donner un accès direct aux processus du système 
+hôte.
+
+L'environnement Guest Shell est principalement destiné aux outils, aux utilitaires Linux 
+et aux opérations de gestion. Il ne remplace donc pas les fonctions réseau assurées par 
+Cisco IOS XE. Son rôle est plutôt de fournir un environnement dans lequel des scripts et 
+des applications peuvent être exécutés directement sur l'équipement.
+
+Dans le cadre de ce projet, Guest Shell constitue l'environnement d'exécution du programme Python. 
+Le script de supervision peut ainsi être exécuté directement sur l'équipement Cisco afin de 
+réaliser les opérations prévues par la solution.
+
+La relation entre les différents éléments peut être représentée de la manière suivante :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/guest_shell_architecture.png}
+    \caption{Architecture simplifiée de Guest Shell sur Cisco IOS XE}
+    \label{fig:guest_shell_architecture}
+\end{figure}
+
+Comme le montre la figure~\ref{fig:guest_shell_architecture}, Cisco IOS XE constitue le système 
+hôte de l'équipement. Guest Shell est exécuté dans un conteneur Linux et fournit l'environnement 
+nécessaire à l'exécution des applications. Le programme Python développé dans le cadre de ce projet 
+est exécuté dans cet environnement.
+
+Guest Shell peut être activé depuis l'interface de commande Cisco à l'aide de la commande 
+\texttt{guestshell enable}. Une fois l'environnement activé, la commande \texttt{guestshell run} 
+permet notamment d'exécuter un programme Linux ou Python dans le Guest Shell.
+
+Il est important de préciser que les caractéristiques exactes de Guest Shell, notamment l'environnement 
+Linux, la version de Python, les ressources disponibles et les méthodes de connexion réseau, dépendent 
+de la version de Cisco IOS XE et de la plateforme utilisée. Ces éléments devront donc être vérifiés sur 
+l'équipement utilisé lors de la réalisation du projet.
+
+Dans cette étude, Guest Shell est donc utilisé comme une passerelle entre les fonctions réseau de 
+Cisco IOS XE et le programme Python chargé d'automatiser les opérations de supervision.
+
+
+
+
+
+\section{Python pour l'automatisation réseau}
+
+Python est un langage de programmation largement utilisé pour l'automatisation des tâches réseau. 
+Sa syntaxe simple et son grand nombre de bibliothèques facilitent le développement de scripts capables 
+d'exécuter des commandes, de communiquer avec des équipements et de transférer des fichiers.
+
+Dans le cadre de ce projet, Python est utilisé dans l'environnement Guest Shell afin d'automatiser 
+les opérations de supervision. Le script doit notamment effectuer des tests de connectivité, récupérer 
+les résultats, générer un rapport et l'envoyer vers une machine distante.
+
+\subsection*{Pourquoi Python ?}
+
+Python est adapté à ce projet car il permet de regrouper plusieurs opérations dans un même programme. 
+Il peut exécuter des commandes du système, traiter les résultats obtenus et utiliser des bibliothèques 
+dédiées aux communications réseau.
+
+Son utilisation permet donc de remplacer plusieurs opérations manuelles par une procédure automatisée. 
+Le script peut, par exemple, lancer un test de connectivité, analyser son résultat, enregistrer les 
+informations obtenues et préparer le rapport final.
+
+Dans ce projet, Python joue ainsi le rôle de lien entre l'environnement Guest Shell, 
+les commandes utilisées pour la supervision et les mécanismes de communication avec la machine distante.
+
+\subsection*{Rôle du module \texttt{subprocess}}
+
+Le module \texttt{subprocess} fait partie de la bibliothèque standard de Python. 
+Il permet de créer de nouveaux processus et d'exécuter des commandes externes depuis 
+un programme Python. Il permet également de récupérer la sortie standard, les erreurs 
+et le code de retour du processus exécuté.
+
+La fonction \texttt{subprocess.run()} constitue l'interface recommandée pour les cas courants d'exécution 
+de commandes. Le programme peut notamment récupérer la sortie de la commande afin de l'analyser.
+
+Dans le cadre de ce projet, \texttt{subprocess} peut être utilisé pour exécuter les commandes nécessaires 
+aux tests de connectivité et récupérer leurs résultats.
+
+\begin{verbatim}
+Python
+   |
+   v
+subprocess
+   |
+   v
+Commande système
+   |
+   v
+Résultat
+   |
+   v
+Analyse par le script Python
+\end{verbatim}
+
+L'utilisation exacte de \texttt{subprocess} dépendra des commandes disponibles dans l'environnement Guest Shell et de la méthode retenue pour réaliser les tests.
+
+\subsection*{Rôle de Paramiko}
+
+Paramiko est une bibliothèque Python qui fournit des fonctionnalités liées au protocole SSH. Elle permet notamment d'établir des connexions SSH et de réaliser des opérations de transfert de fichiers avec SFTP \cite{paramiko_documentation}.
+
+La classe \texttt{SSHClient} fournit une interface de haut niveau pour établir une session SSH. Paramiko fournit également \texttt{SFTPClient}, qui permet d'effectuer des opérations sur des fichiers distants au moyen d'une session SFTP \cite{paramiko_documentation}.
+
+Dans le cadre de ce projet, Paramiko peut être utilisé pour envoyer automatiquement le rapport généré par le script vers la machine de supervision.
+
+Le fonctionnement peut être représenté ainsi :
+
+\begin{verbatim}
+Script Python
+     |
+     v
+  Paramiko
+     |
+     v
+Connexion SSH / SFTP
+     |
+     v
+Machine de supervision
+     |
+     v
+Rapport
+\end{verbatim}
+
+Le choix entre SSH et SFTP dépendra de la méthode finalement retenue pour le transfert du rapport.
+
+\subsection*{Rôle de Requests}
+
+Requests est une bibliothèque Python destinée aux communications HTTP. Elle fournit une interface simple pour envoyer des requêtes HTTP telles que \texttt{GET}, \texttt{POST}, \texttt{PUT} et \texttt{DELETE} \cite{requests_documentation}.
+
+Dans le cadre de ce projet, Requests peut être utilisée si la machine de supervision dispose d'un service HTTP capable de recevoir les résultats produits par le script.
+
+Le fonctionnement peut alors être représenté ainsi :
+
+\begin{verbatim}
+Script Python
+     |
+     v
+  Requests
+     |
+     v
+Requête HTTP
+     |
+     v
+Serveur de supervision
+     |
+     v
+Réception du rapport
+\end{verbatim}
+
+L'utilisation de Requests n'est donc nécessaire que si la solution finale repose sur une communication HTTP. Le document de définition du projet prévoit plusieurs possibilités de transfert, notamment SCP, SFTP, FTP ou HTTP. Le protocole qui sera effectivement utilisé devra être précisé dans la conception et la réalisation de la solution.
 
 \end{document}
